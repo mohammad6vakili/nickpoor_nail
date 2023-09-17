@@ -37,11 +37,17 @@
 .input_email > input {
   width: 100%;
   border-radius: 10px;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #f1f1f1 !important;
+  outline: none !important;
   background: #fff;
   box-shadow: 0px 1px 5px 0px rgba(68, 46, 26, 0.12);
   height: 44px;
   padding-right: 70px;
+  transition: all 0.1s;
+}
+.input_email > input:focus {
+  border: 1px solid #156419 !important;
+  box-shadow: 0px 0px 5px #15641948;
 }
 .input_email > button {
   position: absolute;
@@ -53,6 +59,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.1s;
+}
+.input_email > button:active {
+  opacity: 0.75;
 }
 .link {
   display: flex;

@@ -7,9 +7,28 @@ import GpsIcon from "@/assets/icons/gps";
 import PhoneIcon from "@/assets/icons/phone";
 import ClockIcon from "@/assets/icons/clock";
 import Logo from "@/assets/images/logo.svg";
+import BottomArrowIcon from "@/assets/icons/bottom_arrow";
 import Link from "next/link";
+import { Popover } from "antd";
 
 const Header = ({ isScroll }) => {
+  const categoriesPopover = (
+    <ul className={styles.categories_popover}>
+      <li>
+        <Link href={"/categories"}>ارتونیل (ارتودنسی ناخن)</Link>
+      </li>
+      <li>
+        <Link href={"/categories"}>ناخن فرو رفته در گوشت</Link>
+      </li>
+      <li>
+        <Link href={"/categories"}>درمان قارچ ناخن</Link>
+      </li>
+      <li>
+        <Link href={"/categories"}>درمان ناخن فرورفته</Link>
+      </li>
+    </ul>
+  );
+
   return (
     <header className={styles.header}>
       {/* header_top */}
@@ -54,25 +73,34 @@ const Header = ({ isScroll }) => {
           </Link>
         </div>
         {/* navbar */}
-        <div className={styles.navbar}>
+        <nav className={styles.navbar}>
           <ul>
             <li>
               <Link href="/">صفحه اصلی</Link>
             </li>
             <li>
-              <Link href="#Nail_treatmentClinic">کلینیک درمان ناخن</Link>
+              <Popover
+                content={categoriesPopover}
+                title={null}
+                placement="bottom"
+              >
+                <Link href="/">
+                  <span>کلینیک درمان ناخن</span>
+                  <BottomArrowIcon />
+                </Link>
+              </Popover>
             </li>
             <li>
-              <Link href="#blog">وبلاگ</Link>
+              <Link href="/blog">وبلاگ</Link>
             </li>
             <li>
-              <Link href="about_us">درباره ما</Link>
+              <Link href="/about">درباره ما</Link>
             </li>
             <li>
-              <Link href="contact_us">تماس با ما</Link>
+              <Link href="/contact">تماس با ما</Link>
             </li>
           </ul>
-        </div>
+        </nav>
         <div className={styles.phone_consultancy}>
           <Link href="tel:09390624049">
             <div className={styles.circle}>

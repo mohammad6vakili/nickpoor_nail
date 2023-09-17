@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const scroll = (event) => {
       console.log(event);
-      if (window.scrollY > 30) {
+      if (window.scrollY > 10) {
         setIsScroll(true);
       } else {
         setIsScroll(false);

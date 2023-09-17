@@ -1,8 +1,14 @@
 .header {
   width: 100%;
   position: fixed;
+  z-index: 99999;
   top: 0;
   right: 0;
+}
+#header_bottom_is_scroll {
+  background: white !important;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 /* header_top */
 .header_top {
@@ -73,6 +79,7 @@
 }
 .navbar > ul > li > a {
   display: flex;
+  align-items: center;
   text-decoration: none;
   margin-left: 50px;
   color: #141414;
@@ -80,13 +87,17 @@
   font-size: 15px;
   cursor: pointer;
 }
-
+.navbar > ul > li > a > span {
+  margin-left: 6px;
+}
 .navbar > ul > li > a:hover {
-  /* font-family: "IRANSansWebBold"; */
   text-shadow: 0 0 5px #15641937;
   color: #156419;
   transition: all 400ms ease;
   transition-duration: 0.4s;
+}
+.navbar > ul > li > a:hover line {
+  stroke: #156419;
 }
 /* phone_consultancy */
 .phone_consultancy {
@@ -119,8 +130,18 @@
 .phone_consultancy h4 {
   margin-right: 10px;
 }
-#header_bottom_is_scroll {
-  background: white !important;
-  border-bottom: 1px solid rgba(230, 230, 230, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.156);
+.categories_popover {
+  width: 240px;
+  padding: 0 8px;
+  list-style-type: none;
+}
+.categories_popover > li {
+  padding: 8px;
+  color: black !important;
+}
+.categories_popover > li:hover {
+  color: #156419 !important;
+}
+.categories_popover > li > a {
+  color: unset;
 }

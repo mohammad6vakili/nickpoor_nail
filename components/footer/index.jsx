@@ -9,8 +9,11 @@ import SendMailIcon from "@/assets/icons/send_mail";
 import LocationFooterIcon from "@/assets/icons/location_footer";
 import PhoneFooterIcon from "@/assets/icons/phone_footer";
 import ClockFooterIcon from "@/assets/icons/clock_footer";
+import { useState } from "react";
+import { message } from "antd";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
   return (
     <footer className={styles.footer}>
       {/* footer_top */}
@@ -36,31 +39,46 @@ const Footer = () => {
       <div className={styles.footer_center}>
         {/* input_email */}
         <div className={styles.input_email}>
-          <button>
+          <button
+            onClick={() => {
+              if (email.length === 0) {
+                message.error("لطفا ایمیل خود را وارد کنید");
+              } else {
+                message.success("با موفقیت انجام شد");
+              }
+            }}
+          >
             <SendMailIcon />
           </button>
-          <input placeholder="ایمیل" type="email" />
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="ایمیل"
+            type="email"
+            name="email"
+            id="email"
+          />
         </div>
         <div className={styles.link}>
           <span>
-            <a href="home">کلینیک درمان ناخن </a>
+            <Link href="/">کلینیک درمان ناخن </Link>
           </span>
 
-          <a href="ortonil">ارتونیل (ارتودنسی ناخن)</a>
-          <a href="treatment_nailFungus">کلینیک درمان قارچ ناخن پا</a>
-          <a href="pedicure_treatment">پدیکور درمانی</a>
-          <a href="treatment_ingrownToenails">فرو رفتن ناخن در گوشت</a>
+          <Link href="/categories">ارتونیل (ارتودنسی ناخن)</Link>
+          <Link href="/categories">کلینیک درمان قارچ ناخن پا</Link>
+          <Link href="/categories">پدیکور درمانی</Link>
+          <Link href="/categories">فرو رفتن ناخن در گوشت</Link>
         </div>
         <div className={styles.link}>
           <span>
-            <a href="home">دسترسی سریع</a>
+            <Link href="/">دسترسی سریع</Link>
           </span>
 
-          <a href="home">صفحه اصلی</a>
-          <a href="nail treatment clinic">کلینیک درمان ناخن</a>
-          <a href="blog">وبلاگ</a>
-          <a href="about us">درباره ما</a>
-          <a href="contact us">تماس با ما</a>
+          <Link href="/">صفحه اصلی</Link>
+          <Link href="/">کلینیک درمان ناخن</Link>
+          <Link href="/blog">وبلاگ</Link>
+          <Link href="/about">درباره ما</Link>
+          <Link href="/contact">تماس با ما</Link>
         </div>
         <div className={styles.footer_information}>
           <div>

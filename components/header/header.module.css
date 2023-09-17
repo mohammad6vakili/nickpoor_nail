@@ -1,0 +1,126 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* header_top */
+.header_top {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  background: #156419;
+  align-items: center;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+/* Social_media */
+.Social_media {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.Social_media > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.Social_media > a > svg {
+  width: 25px;
+  height: 25px;
+}
+/* information */
+.information {
+  display: flex;
+  width: 70%;
+  font-family: "IRANSansWeb";
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 12px;
+  align-items: center;
+}
+.information > div {
+  display: flex;
+  align-items: center;
+}
+.information > div > svg {
+  margin-left: 6px;
+}
+.gps,
+.phone {
+  margin-left: 30px;
+}
+/* header_bottom */
+.header_bottom {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+/* navbar */
+.navbar {
+  display: flex;
+}
+.navbar > ul {
+  display: flex;
+}
+
+.navbar > ul > li {
+  display: flex;
+}
+.navbar > ul > li > a {
+  display: flex;
+  text-decoration: none;
+  margin-left: 50px;
+  color: #141414;
+  font-family: "IRANSansWeb";
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.navbar > ul > li > a:hover {
+  /* font-family: "IRANSansWebBold"; */
+  text-shadow: 0 0 5px #15641937;
+  color: #156419;
+  transition: all 400ms ease;
+  transition-duration: 0.4s;
+}
+/* phone_consultancy */
+.phone_consultancy {
+  display: flex;
+  font-family: "IRANSansWeb";
+  color: #141414;
+  font-size: 13px;
+  align-items: center;
+}
+/* circle */
+.circle {
+  width: 39px;
+  height: 39px;
+  border-radius: 39px;
+  background: linear-gradient(75deg, #156419 -5.33%, #17ce20 161.37%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle > svg {
+  width: 18px;
+  height: 18px;
+}
+.phone_consultancy a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: unset;
+}
+.phone_consultancy h4 {
+  margin-right: 10px;
+}
+#header_bottom_is_scroll {
+  background: white !important;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.156);
+}

@@ -8,6 +8,43 @@
   width: 100%;
   height: 450px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home_slider_one_content {
+  width: 60%;
+  position: absolute;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_slider_one_content > h1,
+.home_slider_two_content > h1 {
+  color: #141414;
+  font-size: 48px;
+  font-family: IRANSansWebBold !important;
+  margin-bottom: 20px;
+}
+.home_slider_one_content > span {
+  color: #141414;
+  font-size: 32px;
+}
+.home_slider_two_content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_slider_two_content > span {
+  color: #156419;
+  font-size: 32px;
 }
 .swiper_slide > h1 {
   z-index: 99;

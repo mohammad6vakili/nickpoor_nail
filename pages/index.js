@@ -90,6 +90,10 @@ const Home = () => {
                 fill
                 objectFit={"cover"}
               />
+              <div className={styles.home_slider_one_content}>
+                <h1>درمان بیماریهای ناخن با ارتونیل</h1>
+                <span>بدون جراحی ، خونریزی ، تزریق و درد</span>
+              </div>
             </SwiperSlide>
             <SwiperSlide className={styles.top_swipper_slide}>
               <Image
@@ -98,6 +102,10 @@ const Home = () => {
                 fill
                 objectFit={"cover"}
               />
+              <div className={styles.home_slider_two_content}>
+                <h1>درمان بیماری های پا</h1>
+                <span>ترک عمیق ، زگیل ، میخچه و پینه</span>
+              </div>
             </SwiperSlide>
           </Swiper>
           <div

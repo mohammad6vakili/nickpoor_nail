@@ -78,7 +78,7 @@ const Header = ({ isScroll }) => {
         <nav className={styles.navbar}>
           <ul>
             <li>
-              <Link href="/">صفحه اصلی</Link>
+              <Link href="/">خانه</Link>
             </li>
             <li>
               <Popover

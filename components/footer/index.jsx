@@ -76,8 +76,7 @@ const Footer = () => {
             <Link href="/">دسترسی سریع</Link>
           </span>
 
-          <Link href="/">صفحه اصلی</Link>
-          <Link href="/">کلینیک درمان ناخن</Link>
+          <Link href="/">خانه</Link>
           <Link href="/blog">وبلاگ</Link>
           <Link href="/about">درباره ما</Link>
           <Link href="/contact">تماس با ما</Link>

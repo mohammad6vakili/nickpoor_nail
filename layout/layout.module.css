@@ -10,3 +10,49 @@
 .page_body {
   overflow-x: hidden !important;
 }
+.contact_button {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  z-index: 999999999999;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #156419;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: all ease 0.3s;
+  animation-name: ring;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+.contact_button:hover {
+  background: white;
+  border: 1px solid #156419;
+}
+.contact_button:hover path {
+  fill: #156419 !important;
+}
+.contact_button svg {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+@keyframes ring {
+  0% {
+    box-shadow: 0px 0px 50px #15641900;
+    transform: rotate(0deg);
+  }
+  50% {
+    box-shadow: 0px 0px 50px #156419;
+    transform: rotate(30deg);
+  }
+  100% {
+    box-shadow: 0px 0px 50px #15641900;
+    transform: rotate(0deg);
+  }
+}

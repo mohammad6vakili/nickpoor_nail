@@ -23,10 +23,10 @@ const Header = ({ isScroll }) => {
         </Link>
       </li>
       <li>
-        <Link href={"/categories"}>درمان قارچ ناخن</Link>
+        <Link href={"/categories/nail_fungus"}>درمان قارچ ناخن</Link>
       </li>
       <li>
-        <Link href={"/categories"}>درمان ناخن فرورفته</Link>
+        <Link href={"/categories/pedicure_treatment"}>پدیکور درمانی</Link>
       </li>
     </ul>
   );

@@ -13,29 +13,31 @@ import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png"
 import OrtonixiaContentImageFour from "@/assets/images/ortonixia_content_4.png";
 const CustomerVideo = dynamic(() => import("@/components/customer_video"));
 
-const NailDiggingIntoTheFlesh = () => {
+const PedicureTreatment = () => {
   const array = [1, 1, 1, 1, 1];
 
   return (
     <Layout>
       <section className={styles.background_image}>
-        <Image src={OrtonixiaImageOne} alt="فرو رفتن ناخن در گوشت" />
+        <Image src={OrtonixiaImageOne} alt="پدیکور درمانی" />
         <div className={styles.background_image_opacity}>
-          <h1>فرو رفتن ناخن در گوشت</h1>
+          <h1>پدیکور درمانی</h1>
         </div>
       </section>
       <section className={styles.section_ertonil}>
         <div className={styles.section_ertonil_right}>
           <div className={styles.ertonil}>
             <div className={styles.ertonil_title}>
-              <h1>فرو رفتن ناخن در گوشت</h1>
+              <h1>پدیکور درمانی</h1>
               <div className={styles.ertonil_line}></div>
             </div>
             <div className={styles.ertonil_description}>
               <p>
-                فرو رفتن ناخن در گوشت زمانی اتفاق می‌افتد که ناخن از کناره‌ها به
-                دلایل مختلف در گوشت رشد کرده و انگشت را دچار التهاب و عفونت
-                می‌کند.
+                یک متخصص پا (Podologist) یک پدیکور پزشکی انجام می‌دهد که تفاوت
+                قابل توجهی با پدیکور در سالن‌های زیبایی دارد. در پدیکور درمانی
+                میخچه‌ها، پینه‌ها، ترک‌ها و بافت‌های ضخیم شده از سطح پا حذف
+                می‌شود. پودولوژیست می‌تواند داروهایی را برای بیماری های قارچی،
+                تعریق بیش از حد و مراقبت‌های طول درمان تجویز کند
               </p>
             </div>
             <div className={styles.prescription}>
@@ -44,17 +46,14 @@ const NailDiggingIntoTheFlesh = () => {
                   <div className={styles.dot1}></div>
                 </div>
                 <div>
-                  <h2>علائم ناخن فرو رفته در گوشت چیست؟</h2>
+                  <h2>چه کسی نیاز به پدیکور درمانی پا دارد؟</h2>
                 </div>
               </div>
               <div className={styles.prescription_description}>
                 <p>
-                  ملتهب و قرمز شدن، انگشت احساس درد در ناحیه انگشت، ترشح عفونت
-                  از ناحیه مورد نظر، ورم انگشت، تغییر رنگ ناخن و خونریزی. در
-                  صورت دیدن هر یک از این علائم حتما به پزشک مراجعه شود و از خود
-                  درمانی پرهیز کرده زیرا شرایط را وخیم تر می‌کند. اگر بیمار
-                  دیابت داشته باشد می‌تواند به مراتب خطرناک‌تر از شرایط بیمار
-                  عادی باشد.
+                  بیمارانی که پاهایشان تحت تاثیر ترک پاشنه، زگیل، پینه، میخچه و
+                  ناخن های ضخیم و قارچی و شاخی شکل می‌باشد، نیاز به پدیکور
+                  درمانی دارند.
                 </p>
               </div>
             </div>
@@ -62,14 +61,14 @@ const NailDiggingIntoTheFlesh = () => {
         </div>
         <div className={styles.section_ertonil_left}>
           <div>
-            <Image src={OrtonixiaContentImageOne} alt="فرو رفتن ناخن در گوشت" />
+            <Image src={OrtonixiaContentImageOne} alt="پدیکور درمانی" />
           </div>
         </div>
       </section>
       <section className={styles.section_ertonil_nails}>
         <div className={styles.ertonil_nails}>
           <div className={styles.ertonil_nails_right}>
-            <Image src={OrtonixiaContentImageTwo} alt="فرو رفتن ناخن در گوشت" />
+            <Image src={OrtonixiaContentImageTwo} alt="پدیکور درمانی" />
           </div>
           <div className={styles.ertonil_nails_left}>
             <div className={styles.ertonil_nails_left_title}>
@@ -77,20 +76,17 @@ const NailDiggingIntoTheFlesh = () => {
                 <div className={styles.dot1}></div>
               </div>
               <div>
-                <h2>در چه صورتی ناخن در گوشت فرو می‌رود؟</h2>
+                <h2>تفاوت پدیکور درمانی و پدیکور زیبایی چیست؟</h2>
               </div>
             </div>
             <div className={styles.ertonil_nails_left_description}>
               <p>
-                ناخن در صورتی در گوشت اطراف انگشت فرو می‌رود که تحت فشار قرار
-                بگیرد. <br />
-                از کناره های ناخن به صورت مداوم گرفتن آسیب زیادی به ناخن وارد
-                می‌کند که باعث جمع شدن گوشت از اطراف می‌شود و فشار چند برابر به
-                ناخنی که از کناره در حال رشد دوباره است وارد کرده و ناخن تحت
-                تاثیر فشار گوشت در داخل بافت رشد می‌کند و ایجاد درد، التهاب و
-                عفونت می‌شود. ناخن ها اگر از کناره بصورت غیر اصولی و بدون مکمل
-                درمانی گرفته شوند باعث زاویه دار شدن ناخن شده و رشد ناخن از مسیر
-                اصلی خارج می‌گردد و به داخل گوشت رشد می‌کند.
+                پدیکور درمانی نوعی از مراقبت است که نه تنها بر ظاهر بلکه بر
+                سلامت کلی ناخن ها و پوست پا تمرکز دارد و روی پای خشک انجام
+                می‌شود. پدیکور پزشکی یک درمان تخصصی با هدف کاهش عارضه و در نهایت
+                درمان و بهبود ناخن و پوست پا می‌باشد. از این روش برای کسانی که
+                ناخن های سالمی دارند جهت حفظ زیبایی و سلامت همیشگی استفاده
+                می‌شود.
               </p>
             </div>
           </div>
@@ -113,64 +109,91 @@ const NailDiggingIntoTheFlesh = () => {
 
           <div className={styles.question}>
             <div className={styles.question_title}>
-              <h2>جلوگیری از فرو رفتن ناخن در گوشت</h2>
+              <h2>مراحل پدیکور درمانی</h2>
             </div>
           </div>
           <ul className={styles.question_description_list}>
             <li>
-              <span>پوشیدن کفش های مناسب</span>
+              <span>
+                در ابتدا پا معاینه شده تا در صورت مشاهده بیماری‌هایی همچون زگیل،
+                میخچه، ترک های عمیق پا، اگزمای پوستی و… به صورت جداگانه، با متد
+                و تجهیزات مربوط به عارضه رسیدگی شود.
+              </span>
             </li>
             <li>
-              <span>استفاده از جوراب های نخی و آزاد</span>
+              <span>
+                پا ها کاملاً ضد عفونی شده و ناخن ها به صورت استاندارد کوتاه
+                می‌شوند.
+              </span>
             </li>
             <li>
-              <span>به صورت استاندارد ناخن را کوتاه کردن</span>
+              <span>
+                تراشیدن و تمیز کردن ناخن هایی که مبتلا به قارچ و باکتری هستند،
+                البته به طوری که به بستر ناخن آسیبی وارد نشود.
+              </span>
             </li>
             <li>
-              <span>استفاده از صندل در طول روز در محیط کار</span>
+              <span>
+                درمان سلول های مرده و ضخیم شده ی پا همچون میخچه و پینه
+              </span>
             </li>
             <li>
-              <span>پدیکور درمانی</span>
+              <span>
+                ترک های کف پا تراشیده شده تا جایی که به بافت سالم پوست برسد و
+                قسمت های مرده ی پوست برداشته می‌شوند.
+              </span>
             </li>
             <li>
-              <span>ارتونیل</span>
+              <span>پاها مجدد ضدعفونی و شستشو داده می‌شود.</span>
+            </li>
+            <li>
+              <span>
+                برای احیا و بازسازی پوست و ناخن ها از کرم های درمانی استفاده
+                می‌شود که باعث ریکاوری سریع پوست می‌شوند.
+              </span>
+            </li>
+            <li>
+              <span>
+                استفاده از داروهای ضد قارچ، مختص به کسانی که دچار این عارضه
+                هستند.
+              </span>
             </li>
           </ul>
         </div>
         <div className={styles.section_question_left}>
-          <Image src={OrtonixiaContentImageThree} alt="فرو رفتن ناخن در گوشت" />
+          <Image src={OrtonixiaContentImageThree} alt="پدیکور درمانی" />
           <DottedBackgroundIcon />
         </div>
       </section>
       <section className={styles.ertonil_advantage}>
         <div className={styles.ertonil_advantage_right}>
-          <Image src={OrtonixiaContentImageFour} alt="فرو رفتن ناخن در گوشت" />
+          <Image src={OrtonixiaContentImageFour} alt="پدیکور درمانی" />
           <CloudBackgroundIcon />
         </div>
         <div className={styles.ertonil_advantage_left}>
           <div className={styles.taking_care}>
             <div className={styles.taking_care_title}>
-              <h2>عوارض فرو رفتن ناخن در گوشت</h2>
+              <h2>نتایج درمان به چه چیزهایی بستگی دارد؟</h2>
             </div>
           </div>
           <div className={styles.taking_care_description}>
             <p>
-              فرورفتن ناخن در گوشت باعث درد و تورم و در نهایت عفونت می‌شود، اگر
-              به این شرایط، توسط متخصص رسیدگی نشود، عفونت می‌تواند کل ناحیه مورد
-              نظر را در بر گرفته و عواقب جبران ناپذیری را به همراه داشته باشد.
+              نتایج درمان نه تنها به مهارت پودولوژیست بلکه به مراقبت های خود
+              بیمار هم بستگی دارد. پودولوژیست در ابتدا وضعیت پای شما را می‌بیند
+              سپس روش درمانی مناسب را انتخاب می‌کند.
             </p>
           </div>
 
           <div className={styles.taking_care}>
             <div className={styles.taking_care_title}>
-              <h2>راه درمان ناخن فرو رفته در گوشت چیست؟</h2>
+              <h2>نکته مهم درباره پدیکور درمانی</h2>
             </div>
           </div>
           <div className={styles.taking_care_description}>
             <p>
-              بهترین درمان ناخن فرو رفته در گوشت که به صورت لوله‌ای شکل است،
-              ارتونیل یا ارتودنسی ناخن می‌باشد که نتایج بسیار عالی برای بیمار به
-              همراه خواهد داشت که بدون جراحی، درد و نقاهت انجام می‌شود.
+              این کرم های احیا کننده با توجه به نوع پوست و عارضه های هر فرد
+              انتخاب می‌شود و مصرف خود سرانه و انتخاب اشتباه آن‌ها باعث آسیب و
+              تشدید بیماری های پوستی می‌گردد.
             </p>
           </div>
         </div>
@@ -199,4 +222,4 @@ const NailDiggingIntoTheFlesh = () => {
     </Layout>
   );
 };
-export default NailDiggingIntoTheFlesh;
+export default PedicureTreatment;

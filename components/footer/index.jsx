@@ -64,10 +64,12 @@ const Footer = () => {
             <Link href="/">کلینیک درمان ناخن </Link>
           </span>
 
-          <Link href="/categories">ارتونیل (ارتودنسی ناخن)</Link>
-          <Link href="/categories">کلینیک درمان قارچ ناخن پا</Link>
-          <Link href="/categories">پدیکور درمانی</Link>
-          <Link href="/categories">فرو رفتن ناخن در گوشت</Link>
+          <Link href={"/categories/ortonixia"}>ارتونیل (ارتودنسی ناخن)</Link>
+          <Link href={"/categories/nail_digging_into_the_flesh"}>
+            ناخن فرو رفته در گوشت
+          </Link>
+          <Link href={"/categories/nail_fungus"}>درمان قارچ ناخن</Link>
+          <Link href={"/categories/pedicure_treatment"}>پدیکور درمانی</Link>
         </div>
         <div className={styles.link}>
           <span>

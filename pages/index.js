@@ -219,14 +219,15 @@ const Home = () => {
                 <Image src={CategroySliderThree} alt="Category" />
               </div>
               <div className={styles.detail}>
-                <h3>کلینیک درمان قارچ ناخن</h3>
+                <h3>درمان قارچ ناخن</h3>
                 <span>
-                  درمان با روش جدید ارتونیل بدون کشیدن ناخن و بدون جراحی و حتی
-                  بدون تزریق با روش جدید ارتونیل
+                  کلینیک بهار پودولوژی با بهره گیری از جدیدترین متد روز دنیا و
+                  پیشرفته‌ترین تجهیزات تشخیصی و درمانی برای درمان بیماری‌های
+                  عفونی و قارچی ناخن آماده ارائه خدمات به شما عزیزان می‌باشد.
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
-                <button>
+                <button onClick={() => router.push("/categories/nail_fungus")}>
                   <div>
                     <span>بیشتر بدانید</span>
                     <MoreArrowIcon />
@@ -239,14 +240,18 @@ const Home = () => {
                 <Image src={CategroySliderOne} alt="Category" />
               </div>
               <div className={styles.detail}>
-                <h3>کلینیک درمان ناخن فرو رفته</h3>
+                <h3>پدیکور درمانی</h3>
                 <span>
-                  بدون جراحی و بدون حتی تزریق و بدون درد و خونریزی ناخن فرو رفته
-                  در گوشت را درمان می کنیم.
+                  در پدیکور درمانی میخچه‌ها، پینه‌ها، ترک‌ها و بافت‌های ضخیم شده
+                  از سطح پا حذف می‌شود. پودولوژیست می‌تواند داروهایی را برای
+                  بیماری های قارچی، تعریق بیش از حد و مراقبت‌های طول درمان تجویز
+                  کند.
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
-                <button>
+                <button
+                  onClick={() => router.push("/categories/pedicure_treatment")}
+                >
                   <div>
                     <span>بیشتر بدانید</span>
                     <MoreArrowIcon />

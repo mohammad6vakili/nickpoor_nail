@@ -25,9 +25,11 @@ import CategroySliderTwo from "@/assets/images/category_slider_2.png";
 import CategroySliderThree from "@/assets/images/category_slider_3.png";
 import CommentUserImage from "@/assets/images/comment_user.png";
 import StarIcon from "@/assets/images/star";
+import { useRouter } from "next/router";
 
 const Home = () => {
   const array = [1, 1, 1, 1, 1, 1, 1, 1];
+  const router = useRouter();
   const [topSwiperRef, setTopSwiperRef] = useState();
 
   return (
@@ -175,7 +177,11 @@ const Home = () => {
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
-                <button>
+                <button
+                  onClick={() => {
+                    router.push("/categories/ortonixia");
+                  }}
+                >
                   <div>
                     <span>بیشتر بدانید</span>
                     <MoreArrowIcon />
@@ -196,7 +202,11 @@ const Home = () => {
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
-                <button>
+                <button
+                  onClick={() =>
+                    router.push("/categories/nail_digging_into_the_flesh")
+                  }
+                >
                   <div>
                     <span>بیشتر بدانید</span>
                     <MoreArrowIcon />

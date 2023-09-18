@@ -15,10 +15,12 @@ const Header = ({ isScroll }) => {
   const categoriesPopover = (
     <ul className={styles.categories_popover}>
       <li>
-        <Link href={"/categories"}>ارتونیل (ارتودنسی ناخن)</Link>
+        <Link href={"/categories/ortonixia"}>ارتونیل (ارتودنسی ناخن)</Link>
       </li>
       <li>
-        <Link href={"/categories"}>ناخن فرو رفته در گوشت</Link>
+        <Link href={"/categories/nail_digging_into_the_flesh"}>
+          ناخن فرو رفته در گوشت
+        </Link>
       </li>
       <li>
         <Link href={"/categories"}>درمان قارچ ناخن</Link>

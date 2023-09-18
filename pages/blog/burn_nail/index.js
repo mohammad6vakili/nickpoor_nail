@@ -13,6 +13,49 @@ import ContentImageFive from "@/assets/images/burn_nail_content_5.png";
 const BurningTheRootOfTheNail = () => {
   return (
     <>
+      <Head>
+        <title>اولین کلینیک درمان ناخن در قزوین | سوزاندن ریشه ناخن</title>
+        <meta
+          name="description"
+          content="اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | سوزاندن ریشه ناخن"
+        />
+        <meta
+          property="og:title"
+          content="اولین کلینیک درمان ناخن در قزوین | سوزاندن ریشه ناخن"
+        />
+        <meta
+          property="og:description"
+          content="اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | سوزاندن ریشه ناخن"
+        />
+        <meta property="og:url" content="https://baharpod.ir/" />
+        <meta property="og:site_name" content="کلینیک درمان ناخن" />
+        <meta
+          name="twitter:title"
+          content="اولین کلینیک درمان ناخن در قزوین | سوزاندن ریشه ناخن"
+        />
+        <meta
+          name="twitter:description"
+          content="
+          اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | سوزاندن ریشه ناخن"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="theme-color" content="#156419" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="کلینیک درمان ناخن در قزوین"
+          href="https://baharpod.ir/"
+        />
+        <link rel="canonical" href="https://baharpod.ir/" />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css"
+        />
+      </Head>
       <Layout>
         <section className={styles.background_image}>
           <Image src={BannerImage} alt="سوزاندن ریشه ناخن" />

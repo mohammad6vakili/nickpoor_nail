@@ -339,7 +339,7 @@ const Home = () => {
               <div className={styles.blog_btn}>
                 <button>
                   <div>
-                    <span>بیشتر بدانید</span>
+                    <span>ادامه مطلب</span>
                     <MoreArrowIcon />
                   </div>
                 </button>
@@ -359,7 +359,7 @@ const Home = () => {
               <div className={styles.blog_btn}>
                 <button>
                   <div>
-                    <span>بیشتر بدانید</span>
+                    <span>ادامه مطلب</span>
                     <MoreArrowIcon />
                   </div>
                 </button>
@@ -380,7 +380,7 @@ const Home = () => {
               <div className={styles.blog_btn}>
                 <button>
                   <div>
-                    <span>بیشتر بدانید</span>
+                    <span>ادامه مطلب</span>
                     <MoreArrowIcon />
                   </div>
                 </button>

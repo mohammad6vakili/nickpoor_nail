@@ -25,3 +25,74 @@ html {
   display: flex;
   align-items: center;
 }
+.not_found_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.not_found_page > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.not_found_page > div > img {
+  width: 450px;
+  height: 500px;
+}
+
+.not_found_page > div > button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 2px !important;
+  border: none !important;
+  background: rgb(21, 100, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 100, 25, 0.4253895308123249) 0%,
+    rgba(21, 100, 25, 1) 100%
+  );
+}
+.not_found_page > div > button > div {
+  width: 100%;
+  height: 100%;
+  font-family: "IRANSansWebBold";
+  color: #156419;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.not_found_page > div > button > div > span {
+  font-size: 16px;
+}
+.not_found_page > div > button > div:hover {
+  color: white;
+  background: rgb(21, 100, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 100, 25, 0.4253895308123249) 0%,
+    rgba(21, 100, 25, 1) 100%
+  );
+}
+.not_found_page > div > button > div:hover path {
+  fill: white !important;
+}
+.not_found_page > div > p {
+  margin: 16px 0 48px 0;
+  font-size: 18px;
+  opacity: 0.75;
+}

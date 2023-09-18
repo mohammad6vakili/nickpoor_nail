@@ -105,7 +105,7 @@ const Blog = () => {
                 </div>
                 <div className={styles.blog_btn}>
                   <button>
-                    <Link href={"/blog/burningـtheـrootـofـtheـnail"}>
+                    <Link href={"/blog/burn_nail"}>
                       <div>
                         <span>ادامه مطلب</span>
                         <MoreArrowIcon />

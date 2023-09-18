@@ -25,7 +25,6 @@
   font-family: "IRANSansWebBold";
   font-size: 30px;
 }
-/* list */
 .blog_articles {
   width: 100%;
   padding: 0 50px;
@@ -136,4 +135,705 @@
 }
 .blog_btn > button > a > div > span {
   margin-left: 8px;
+}
+/* view blog post */
+.background_image {
+  width: 100%;
+  position: relative;
+  margin-top: -4px;
+  margin-bottom: 50px;
+}
+.background_image > img {
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 100%;
+  height: 426px;
+}
+.background_image_opacity {
+  width: 100%;
+  background: rgba(46, 48, 61, 0.7);
+  height: 426px;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background_image_opacity > h1 {
+  color: #fff;
+  font-family: "IRANSansWebBold";
+  font-size: 30px;
+}
+.section_podology {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 0 50px;
+}
+.section_podology_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.podology {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.podology_title {
+  width: 100%;
+}
+.podology_title > h1 {
+  font-size: 22px;
+  font-family: "IRANSansWebBold";
+  margin-bottom: 5px;
+  color: #141414;
+}
+
+.podology_line {
+  width: 130px;
+  height: 6px;
+  background: linear-gradient(
+    270deg,
+    #db3567 0%,
+    #156419 0.01%,
+    rgba(21, 100, 25, 0) 100%
+  );
+  border-radius: 150px;
+  margin-bottom: 20px;
+}
+.podology_description {
+  margin-bottom: 15px;
+}
+.podology_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+
+.podiatrist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.podiatrist_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.podiatrist_title > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.podiatrist_description {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.podiatrist_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+
+.section_podology_left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30px;
+}
+.section_podology_left > div {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 465px;
+  background-image: url(../assets/images/ortonixia_background.png);
+  object-fit: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.section_podology_left > div > img {
+  width: 400px;
+  height: 470px;
+  position: absolute;
+  object-fit: cover;
+  left: -30px;
+  bottom: -30px;
+  border-radius: 10px;
+}
+.section_podology2 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 0 50px;
+  background: #f8faf8;
+  height: 350px;
+}
+.section_podology2_right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.notـdo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.notـdoـtitle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.notـdoـtitle > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.notـdo_description {
+  width: 80%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.notـdo_description > span {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+  margin-bottom: 8px;
+}
+.section_podology2_left {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.podology2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.podology2ـtitle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.podology2ـtitle > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.podology2_description {
+  display: flex;
+  flex-direction: column;
+}
+.podology2_description2 {
+  display: flex;
+  align-items: center;
+}
+
+.podology2_description2 > div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background: #1a601a;
+  margin-left: 10px;
+  display: flex;
+  margin-bottom: 8px;
+}
+.podology2_description2 > span {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+  margin-bottom: 8px;
+}
+.section_onycholysis {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  padding: 0 50px;
+}
+.section_onycholysis_right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.onycholysis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.onycholysis_title {
+  width: 100%;
+}
+.onycholysis_title > h1 {
+  font-size: 22px;
+  font-family: "IRANSansWebBold";
+  margin-bottom: 5px;
+  color: #141414;
+}
+
+.onycholysis_line {
+  width: 180px;
+  height: 6px;
+  background: linear-gradient(
+    270deg,
+    #db3567 0%,
+    #156419 0.01%,
+    rgba(21, 100, 25, 0) 100%
+  );
+  border-radius: 150px;
+  margin-bottom: 20px;
+}
+.onycholysis_description {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.onycholysis_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.section_burningRootNail_left {
+  width: 49%;
+  display: flex;
+  justify-content: flex-end;
+}
+.section_strike {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+.section_strike_right {
+  width: 49%;
+  display: flex;
+}
+.section_strike_right > img {
+  width: 569px;
+  height: 419px;
+  object-fit: cover;
+}
+.section_strike_left {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.strike_left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.strike_left_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.strike_left_title > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.strike_left_description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.strike_left_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.strike_left_description > span {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+  margin-bottom: 6px;
+}
+.section_Local_stimulation {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+}
+.section_Local_stimulation_right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+.section_Local_stimulation_left {
+  width: 49%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 45px;
+  position: relative;
+}
+
+.section_Local_stimulation_left > img {
+  object-fit: cover;
+  width: 556px;
+  height: 405px;
+  border-radius: 10px;
+}
+.section_Local_stimulation_left > svg {
+  position: absolute;
+  top: -50px;
+  z-index: -1;
+}
+.vector > svg {
+  position: absolute;
+  right: 80px;
+  bottom: -15px;
+  z-index: -1;
+}
+.section_Agents {
+  display: flex;
+  width: 100%;
+  background: #f8faf8;
+  height: 380px;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+.section_Agents_top {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+.section_Agents_top_right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.Agents_top_right_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Agents_top_right_title > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.Agents_top_right_description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Agents_top_right_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.section_Agents_top_left {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Agents_top_left_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Agents_top_left_title > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.Agents_top_left_description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Agents_top_left_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.Agents_top_left_description > span {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+  margin-bottom: 3px;
+}
+.section_burningRootNail {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  padding: 0 50px;
+}
+.section_burningRootNail_right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.burningRootNail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.burningRootNail_title {
+  width: 100%;
+}
+.burningRootNail_title > h1 {
+  font-size: 22px;
+  font-family: "IRANSansWebBold";
+  margin-bottom: 5px;
+  color: #141414;
+}
+
+.burningRootNail_line {
+  width: 180px;
+  height: 6px;
+  background: linear-gradient(
+    270deg,
+    #db3567 0%,
+    #156419 0.01%,
+    rgba(21, 100, 25, 0) 100%
+  );
+  border-radius: 150px;
+  margin-bottom: 20px;
+}
+.burningRootNail_description {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.burningRootNail_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+
+.indented_nail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.indented_nail_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.indented_nail_title > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.indented_nail_description {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.indented_nail_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.section_burningRootNail_left {
+  width: 49%;
+  display: flex;
+  justify-content: flex-end;
+}
+.section_burningRootNail_left > div {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 465px;
+  background-image: url(../assets/images/ortonixia_background.png);
+  object-fit: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.section_burningRootNail_left > div > img {
+  width: 400px;
+  height: 470px;
+  position: absolute;
+  object-fit: cover;
+  left: -30px;
+  bottom: -30px;
+  border-radius: 10px;
+}
+.section_complications_burning {
+  display: flex;
+  width: 100%;
+  margin-bottom: 160px;
+  background: #f8faf8;
+  height: 480px;
+  padding: 0 50px;
+}
+.Complications_burning_right {
+  display: flex;
+  width: 49%;
+  align-items: center;
+}
+.Complications_burning_left {
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.Complications_burning_Frame {
+  border: 2px solid #1a601a;
+  position: relative;
+  width: 649px;
+  height: 400px;
+}
+.Complications_burning_Frame1 {
+  width: 649px;
+  height: 325px;
+  position: absolute;
+  border: 2px solid #1a601a;
+  right: 35px;
+  top: 35px;
+}
+
+.Complications_burning {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 20px 0 60px;
+}
+.Complications_burning_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Complications_burning_title > div > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.Complications_burning_description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Complications_burning_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.Complications_burning_description > span {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+  margin-bottom: 6px;
+}
+
+.question_description {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_question {
+  width: 100%;
+  display: flex;
+  margin-bottom: 160px;
+}
+.section_question_right {
+  width: 50%;
+  display: flex;
+  padding: 0 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question {
+  display: flex;
+  width: 100%;
+}
+.question_title {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.question_title > h2 {
+  font-size: 18px;
+  font-family: "IRANSansWebBold";
+  color: #141414;
+}
+.question_description {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.question_description > p {
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.question_description > span {
+  margin-bottom: 3px;
+  color: #555;
+  font-size: 15px;
+  font-family: "IRANSansWeb";
+  text-align: justify;
+}
+.section_question_left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 45px;
+  position: relative;
+}
+.section_question_left > img {
+  object-fit: cover;
+  width: 556px;
+  height: 405px;
+}
+.section_question_left > svg {
+  position: absolute;
+  top: -50px;
+  z-index: -1;
+}
+.vector > svg {
+  position: absolute;
+  right: 80px;
+  bottom: -50px;
+  z-index: -1;
 }

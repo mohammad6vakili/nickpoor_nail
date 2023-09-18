@@ -63,7 +63,7 @@ const Contact = () => {
       </Head>
       {/* page body */}
       <Layout>
-        <div className={styles.background_image2}>
+        <section className={styles.background_image2}>
           <div className={styles.background_image2_right}>
             <Image
               src={ContactAvatar}
@@ -75,8 +75,8 @@ const Contact = () => {
             <h3>اولین کلینیک درمان ناخن در قزوین</h3>
             <span>با بیش از ۱۰ سال سابقه ی کار</span>
           </div>
-        </div>
-        <div className={styles.contactUs_information}>
+        </section>
+        <section className={styles.contactUs_information}>
           <div className={styles.contactUs_box}>
             <Link href={"tel://09390624049"}>
               <ContactPhoneIcon />
@@ -99,8 +99,8 @@ const Contact = () => {
               <h4>۰۹۳۹۰۶۲۴۰۴۹</h4>
             </Link>
           </div>
-        </div>
-        <div className={styles.section_Address}>
+        </section>
+        <section className={styles.section_Address}>
           <div className={styles.Address1}>
             <ContactAddressIcon />
             <h3>
@@ -108,15 +108,15 @@ const Contact = () => {
               واحد ۳ ، جنب آموزشگاه فارابی
             </h3>
           </div>
-        </div>
-        <div class={styles.section_about}>
+        </section>
+        <section class={styles.section_about}>
           <div className={styles.mapTitle}>
             <h1>آدرس ما را روی نقشه پیدا کنید</h1>
           </div>
           <div className={styles.map_container}>
             <MapComponent />
           </div>
-        </div>
+        </section>
       </Layout>
     </Fragment>
   );

@@ -50,13 +50,13 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.background_image}>
+        <section className={styles.background_image}>
           <Image src={AboutBanner} alt="درباره کلینیک درمان ناخن" />
           <div className={styles.background_image_opacity}>
             <h1>درباره ما</h1>
           </div>
-        </div>
-        <div className={styles.section_aboutUs}>
+        </section>
+        <section className={styles.section_aboutUs}>
           <div className={styles.section_aboutUs_right}>
             <div className={styles.aboutUs}>
               <div className={styles.aboutUs_title}>
@@ -86,7 +86,7 @@ const About = () => {
               <Image src={AboutOwnerImage} alt="درباره کلینیک درمان ناخن" />
             </div>
           </div>
-        </div>
+        </section>
       </Layout>
     </Fragment>
   );

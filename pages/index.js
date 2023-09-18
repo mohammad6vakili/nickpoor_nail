@@ -338,10 +338,12 @@ const Home = () => {
               </div>
               <div className={styles.blog_btn}>
                 <button>
-                  <div>
-                    <span>ادامه مطلب</span>
-                    <MoreArrowIcon />
-                  </div>
+                  <Link href={"/blog/what_is_podology"}>
+                    <div>
+                      <span>ادامه مطلب</span>
+                      <MoreArrowIcon />
+                    </div>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -358,10 +360,12 @@ const Home = () => {
               </div>
               <div className={styles.blog_btn}>
                 <button>
-                  <div>
-                    <span>ادامه مطلب</span>
-                    <MoreArrowIcon />
-                  </div>
+                  <Link href={"/blog/burningـtheـrootـofـtheـnail"}>
+                    <div>
+                      <span>ادامه مطلب</span>
+                      <MoreArrowIcon />
+                    </div>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -379,10 +383,12 @@ const Home = () => {
               </div>
               <div className={styles.blog_btn}>
                 <button>
-                  <div>
-                    <span>ادامه مطلب</span>
-                    <MoreArrowIcon />
-                  </div>
+                  <Link href={"/blog/onycholysis"}>
+                    <div>
+                      <span>ادامه مطلب</span>
+                      <MoreArrowIcon />
+                    </div>
+                  </Link>
                 </button>
               </div>
             </div>

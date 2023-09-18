@@ -7,6 +7,7 @@ import BlogBanner from "@/assets/images/blog_header.jpg";
 import BlogOneImage from "@/assets/images/blog1.png";
 import BlogTwoImage from "@/assets/images/blog2.png";
 import BlogThreeImage from "@/assets/images/blog3.png";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -79,10 +80,12 @@ const Blog = () => {
                 </div>
                 <div className={styles.blog_btn}>
                   <button>
-                    <div>
-                      <span>ادامه مطلب</span>
-                      <MoreArrowIcon />
-                    </div>
+                    <Link href={"/blog/what_is_podology"}>
+                      <div>
+                        <span>ادامه مطلب</span>
+                        <MoreArrowIcon />
+                      </div>
+                    </Link>
                   </button>
                 </div>
               </article>
@@ -102,10 +105,12 @@ const Blog = () => {
                 </div>
                 <div className={styles.blog_btn}>
                   <button>
-                    <div>
-                      <span>ادامه مطلب</span>
-                      <MoreArrowIcon />
-                    </div>
+                    <Link href={"/blog/burningـtheـrootـofـtheـnail"}>
+                      <div>
+                        <span>ادامه مطلب</span>
+                        <MoreArrowIcon />
+                      </div>
+                    </Link>
                   </button>
                 </div>
               </article>
@@ -126,10 +131,12 @@ const Blog = () => {
                 </div>
                 <div className={styles.blog_btn}>
                   <button>
-                    <div>
-                      <span>ادامه مطلب</span>
-                      <MoreArrowIcon />
-                    </div>
+                    <Link href={"/blog/onycholysis"}>
+                      <div>
+                        <span>ادامه مطلب</span>
+                        <MoreArrowIcon />
+                      </div>
+                    </Link>
                   </button>
                 </div>
               </article>

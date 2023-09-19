@@ -837,3 +837,47 @@
   bottom: -50px;
   z-index: -1;
 }
+
+@media only screen and (max-width: 800px) {
+  .blog_articles {
+    padding: 0 12px !important;
+  }
+  .background_image {
+    margin-bottom: 48px;
+  }
+  .section_aboutUs {
+    flex-direction: column;
+  }
+  .section_aboutUs_right {
+    margin-bottom: 16px !important;
+  }
+  .section_aboutUs > div {
+    width: 100% !important;
+  }
+  .section_aboutUs_left {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .background_image_opacity,
+  .background_image {
+    height: 300px;
+  }
+  .background_image > img {
+    height: 100% !important;
+    object-fit: fill;
+  }
+  .aboutUs_title > h1 {
+    text-align: center;
+    font-size: 18px !important;
+  }
+  .aboutUs_line {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .aboutUs_description > p {
+    font-size: 14px;
+  }
+}

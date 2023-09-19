@@ -100,8 +100,6 @@
   border-radius: 200px 200px 20px 20px;
 }
 
-@media only screen and (max-width: 1000px) {
-}
 @media only screen and (max-width: 800px) {
   .section_aboutUs {
     padding-right: 12px !important;
@@ -140,8 +138,6 @@
   .aboutUs_line {
     width: 100% !important;
   }
-}
-@media only screen and (max-width: 500px) {
 }
 @media only screen and (max-width: 400px) {
   .aboutUs_description > p {

@@ -17,6 +17,17 @@
 html {
   overflow-x: hidden !important;
 }
+div,
+button,
+span {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
 .ant-message,
 .ant-popover {
   z-index: 99999999999999 !important;
@@ -95,4 +106,28 @@ html {
   margin: 16px 0 48px 0;
   font-size: 18px;
   opacity: 0.75;
+}
+.ant-modal-content {
+  background-color: unset !important;
+  box-shadow: none !important;
+}
+.ant-modal,
+.ant-modal-content {
+  z-index: 9999999 !important;
+}
+.ant-menu-inline {
+  border-inline-end: none !important;
+}
+.ant-menu-title-content {
+  font-size: 16px !important;
+}
+.ant-menu-submenu > div,
+.ant-menu-item {
+  min-height: 55px !important;
+}
+.ant-menu-sub span {
+  font-size: 13px !important;
+}
+.ant-menu-submenu li {
+  min-height: 45px !important;
 }

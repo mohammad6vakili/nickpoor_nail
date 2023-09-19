@@ -10,7 +10,6 @@
   border-bottom: 1px solid rgba(230, 230, 230, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
-/* header_top */
 .header_top {
   width: 100%;
   display: flex;
@@ -20,7 +19,6 @@
   padding: 0 50px;
   justify-content: space-between;
 }
-/* Social_media */
 .Social_media {
   display: flex;
   align-items: center;
@@ -36,7 +34,6 @@
   width: 25px;
   height: 25px;
 }
-/* information */
 .information {
   display: flex;
   width: 70%;
@@ -57,7 +54,6 @@
 .phone {
   margin-left: 30px;
 }
-/* header_bottom */
 .header_bottom {
   width: 100%;
   display: flex;
@@ -66,14 +62,12 @@
   padding: 0 50px;
   justify-content: space-between;
 }
-/* navbar */
 .navbar {
   display: flex;
 }
 .navbar > ul {
   display: flex;
 }
-
 .navbar > ul > li {
   display: flex;
 }
@@ -99,7 +93,6 @@
 .navbar > ul > li > a:hover line {
   stroke: #156419;
 }
-/* phone_consultancy */
 .phone_consultancy {
   display: flex;
   font-family: "IRANSansWeb";
@@ -107,7 +100,6 @@
   font-size: 13px;
   align-items: center;
 }
-/* circle */
 .circle {
   width: 39px;
   height: 39px;
@@ -144,4 +136,50 @@
 }
 .categories_popover > li > a {
   color: unset;
+}
+.ham_menu_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header_top,
+  .navbar {
+    display: none;
+  }
+  .header_bottom {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .phone_consultancy {
+    display: none;
+  }
+  .header_bottom > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+  .header_bottom > div:nth-child(1) > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header_bottom > div:nth-child(1) > a > img {
+    height: 36px;
+  }
+  .ham_menu_btn {
+    display: flex;
+    border: none;
+    background: transparent;
+    font-size: 26px !important;
+    transition: opacity 0.1s;
+  }
+  .ham_menu_btn:active {
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header_bottom {
+    padding: 0 12px;
+  }
 }

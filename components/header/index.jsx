@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
 import WhatsappIcon from "@/assets/icons/whatsapp";
@@ -8,10 +9,13 @@ import PhoneIcon from "@/assets/icons/phone";
 import ClockIcon from "@/assets/icons/clock";
 import Logo from "@/assets/images/logo.svg";
 import BottomArrowIcon from "@/assets/icons/bottom_arrow";
+import { AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 import { Popover } from "antd";
+import HamburgerMenu from "../hamburger_menu";
 
 const Header = ({ isScroll }) => {
+  const [open, setOpen] = useState(false);
   const categoriesPopover = (
     <ul className={styles.categories_popover}>
       <li>
@@ -32,7 +36,10 @@ const Header = ({ isScroll }) => {
   );
 
   return (
-    <header className={styles.header}>
+    <header
+      style={open ? { zIndex: 9 } : { zIndex: 9999 }}
+      className={styles.header}
+    >
       {/* header_top */}
       <div className={styles.header_top}>
         {/* Social_media */}
@@ -111,7 +118,17 @@ const Header = ({ isScroll }) => {
             <h4>مشاوره تلفنی :۰۹۳۹۰۶۲۴۰۴۹</h4>
           </Link>
         </div>
+        {/* hamburger menu btn */}
+
+        <button
+          onClick={() => setOpen(true)}
+          type="button"
+          className={styles.ham_menu_btn}
+        >
+          <AiOutlineMenu />
+        </button>
       </div>
+      <HamburgerMenu open={open} setOpen={setOpen} />
     </header>
   );
 };

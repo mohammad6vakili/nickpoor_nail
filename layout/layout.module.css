@@ -56,3 +56,19 @@
     transform: rotate(0deg);
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .layout_container {
+    padding-top: 60px;
+  }
+  .contact_button {
+    bottom: 24px;
+    left: 24px;
+    width: 60px;
+    height: 60px;
+  }
+  .contact_button svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}

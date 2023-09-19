@@ -10,7 +10,6 @@
   min-width: 100%;
   height: 426px;
 }
-/* background_image_opacity */
 .background_image_opacity {
   width: 100%;
   background: rgba(46, 48, 61, 0.7);
@@ -26,7 +25,6 @@
   font-family: "IRANSansWebBold";
   font-size: 30px;
 }
-/* section_aboutUs */
 .section_aboutUs {
   width: 100%;
   background: #f8faf8;
@@ -37,20 +35,16 @@
   justify-content: space-between;
   position: relative;
 }
-/* section_aboutUs_right */
 .section_aboutUs_right {
   width: 49%;
   display: flex;
   flex-direction: column;
 }
-
-/* aboutUs */
 .aboutUs {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-/* aboutUs_title */
 .aboutUs_title {
   width: 100%;
 }
@@ -60,8 +54,6 @@
   margin-bottom: 5px;
   color: #141414;
 }
-
-/* aboutUs_line */
 .aboutUs_line {
   width: 80px;
   height: 6px;
@@ -74,7 +66,6 @@
   border-radius: 150px;
   margin-bottom: 20px;
 }
-/* aboutUs_description */
 .aboutUs_description {
   margin-bottom: 15px;
 }
@@ -107,4 +98,53 @@
   height: 100%;
   object-fit: cover;
   border-radius: 200px 200px 20px 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+}
+@media only screen and (max-width: 800px) {
+  .section_aboutUs {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+    margin-bottom: 48px;
+  }
+  .background_image {
+    margin-bottom: 48px;
+  }
+  .section_aboutUs {
+    flex-direction: column;
+  }
+  .section_aboutUs_right {
+    margin-bottom: 16px !important;
+  }
+  .section_aboutUs > div {
+    width: 100% !important;
+  }
+  .section_aboutUs_left {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .background_image_opacity,
+  .background_image {
+    height: 300px;
+  }
+  .background_image > img {
+    height: 100% !important;
+  }
+  .aboutUs_title > h1 {
+    text-align: center;
+    font-size: 18px !important;
+  }
+  .aboutUs_line {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (max-width: 400px) {
+  .aboutUs_description > p {
+    font-size: 14px;
+  }
 }

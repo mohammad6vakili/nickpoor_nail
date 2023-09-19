@@ -144,7 +144,7 @@ const Home = () => {
               </p>
             </div>
             <div className={styles.section_one_right_btn}>
-              <button>
+              <button onClick={() => router.push("/about")}>
                 <div>
                   <span>بیشتر بدانید</span>
                   <MoreArrowIcon />
@@ -164,7 +164,25 @@ const Home = () => {
             <h1>کلینیک درمان بیماری های ناخن</h1>
             <div className={styles.line1}></div>
           </div>
-          <Swiper slidesPerView={3} spaceBetween={40}>
+          <Swiper
+            breakpoints={{
+              300: {
+                width: 300,
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              568: {
+                width: 350,
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              970: {
+                width: 350,
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+          >
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
                 <Image src={CategroySliderOne} alt="Category" />
@@ -405,7 +423,23 @@ const Home = () => {
               modules={[Autoplay]}
               autoplay={true}
               slidesPerView={3}
-              spaceBetween={40}
+              breakpoints={{
+                300: {
+                  width: 300,
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                568: {
+                  width: 350,
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                970: {
+                  width: 350,
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
             >
               {array.map((item, index) => (
                 <SwiperSlide

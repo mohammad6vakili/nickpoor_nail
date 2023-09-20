@@ -243,8 +243,23 @@ const Ortonixia = () => {
         </section>
         <section className={styles.videoSwiper}>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={40}
+            breakpoints={{
+              300: {
+                width: 300,
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              568: {
+                width: 350,
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              970: {
+                width: 350,
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
             modules={[Autoplay]}
             autoplay={true}
             className={styles.swiper_wrapper}

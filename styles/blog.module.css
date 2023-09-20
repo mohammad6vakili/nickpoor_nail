@@ -838,25 +838,171 @@
   z-index: -1;
 }
 
+@media only screen and (max-width: 1400px) {
+  .section_complications_burning {
+    flex-direction: column-reverse;
+    height: unset !important;
+    padding-bottom: 24px !important;
+  }
+  .Complications_burning_right {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Complications_burning_right > div:nth-child(1) {
+    width: 34%;
+  }
+  .Complications_burning_right > div:nth-child(1) > img {
+    width: 250px;
+    height: 250px;
+  }
+  .Complications_burning_right > div:nth-child(2) {
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Complications_burning_right > div:nth-child(2) > img {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 !important;
+  }
+  .Complications_burning_left,
+  .Complications_burning_left > div {
+    width: 100%;
+    height: unset !important;
+  }
+  .Complications_burning_left > div {
+    padding: 12px;
+  }
+  .Complications_burning_left > div > div {
+    position: unset !important;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .section_burningRootNail,
+  .section_podology {
+    flex-direction: column;
+  }
+  .section_burningRootNail > div,
+  .section_podology > div {
+    width: 100%;
+    margin: 0;
+  }
+  .section_burningRootNail > div:nth-child(1),
+  .section_podology > div:nth-child(1) {
+    margin-bottom: 24px !important;
+  }
+  .section_burningRootNail_left,
+  .section_podology_left {
+    display: flex;
+    justify-content: center;
+  }
+  .section_burningRootNail_left > div,
+  .section_podology_left > div {
+    width: 320px;
+    height: 250px;
+  }
+  .section_burningRootNail_left > div > img:nth-child(1),
+  .section_podology_left > div > img:nth-child(1) {
+    width: 300px !important;
+    height: 250px !important;
+    top: -10px;
+    left: 10px;
+  }
+  .section_podology2 {
+    flex-direction: column;
+    height: unset !important;
+  }
+  .section_podology2 > div {
+    width: 100% !important;
+  }
+  .notـdo_description {
+    width: 100% !important;
+  }
+  .notـdo_description > span {
+    width: 100% !important;
+  }
+  .Complications_burning_right > div:nth-child(1) > img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .Complications_burning_right > div:nth-child(2) > img {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover;
+  }
+  .section_question_left > svg {
+    display: none;
+  }
+  .section_question {
+    flex-direction: column;
+  }
+  .section_question > div {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .section_question > div:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .section_question > div:nth-child(2) {
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 800px) {
+  .section_question,
+  .section_complications_burning,
+  .section_burningRootNail,
+  .section_podology2,
+  .section_podology,
   .blog_articles {
     padding: 0 12px !important;
   }
+  .section_complications_burning {
+    padding-bottom: 24px !important;
+  }
+  .section_question,
+  .section_podology,
+  .section_podology2,
   .background_image {
     margin-bottom: 48px;
   }
-  .section_aboutUs {
+  .section_complications_burning {
+    margin-bottom: 100px !important;
+  }
+  .Complications_burning_right {
     flex-direction: column;
   }
-  .section_aboutUs_right {
+  .Complications_burning_right > div {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Complications_burning_right > div:nth-child(1) {
+    margin-bottom: 16px;
+  }
+  .Complications_burning_right > div:nth-child(2) > img,
+  .Complications_burning_right > div:nth-child(1) > img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .Complications_burning_right > div:nth-child(2) > img:nth-child(1) {
     margin-bottom: 16px !important;
   }
-  .section_aboutUs > div {
-    width: 100% !important;
+  .Complications_burning {
+    padding: 0 !important;
   }
-  .section_aboutUs_left {
-    display: flex;
-    justify-content: center;
+  .section_question_left > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -866,18 +1012,25 @@
   }
   .background_image > img {
     height: 100% !important;
-    object-fit: fill;
   }
-  .aboutUs_title > h1 {
+  .podology_title > h1 {
     text-align: center;
     font-size: 18px !important;
   }
-  .aboutUs_line {
+  .podology_line {
     width: 100% !important;
   }
+  .background_image_opacity > h1 {
+    font-size: 20px;
+  }
 }
-@media only screen and (max-width: 400px) {
-  .aboutUs_description > p {
-    font-size: 14px;
+@media only screen and (max-width: 350px) {
+  .section_podology_left > div {
+    width: 280px;
+    height: 240px;
+  }
+  .section_podology_left > div > img:nth-child(1) {
+    width: 260px !important;
+    height: 240px !important;
   }
 }

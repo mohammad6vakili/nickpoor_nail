@@ -114,7 +114,6 @@ const WhatIsPodology = () => {
           </div>
           <div className={styles.section_podology_left}>
             <div>
-              <img src="./image/IMG_5813.png" />
               <Image src={ContentImageTwo} alt="پودولوژی چیست؟" />
             </div>
           </div>

@@ -738,7 +738,6 @@
   align-items: center;
   margin-bottom: 10px;
 }
-
 .Complications_burning_title > div > h2 {
   font-size: 18px;
   font-family: "IRANSansWebBold";
@@ -762,12 +761,10 @@
   text-align: justify;
   margin-bottom: 6px;
 }
-
 .question_description {
   display: flex;
   flex-direction: column;
 }
-
 .section_question {
   width: 100%;
   display: flex;
@@ -883,17 +880,50 @@
     height: 100%;
     padding: 8px;
   }
+  .section_strike_right > img {
+    width: 450px;
+    height: 360px;
+    object-fit: cover;
+  }
+  .section_Local_stimulation_left svg {
+    display: none;
+  }
+  .section_Local_stimulation_left > img {
+    width: 456px;
+    height: 325px;
+  }
+  .section_Agents {
+    height: unset !important;
+  }
 }
 @media only screen and (max-width: 1000px) {
+  .section_Agents > div,
   .section_burningRootNail,
+  .section_onycholysis,
   .section_podology {
     flex-direction: column;
   }
+  .section_Agents {
+    padding: 12px;
+  }
+  .section_onycholysis,
+  .section_onycholysis > div {
+    width: 100% !important;
+  }
+  .onycholysis_title > h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .onycholysis_line {
+    width: 100%;
+  }
+  .section_Agents > div > .section_onycholysis > div,
   .section_burningRootNail > div,
   .section_podology > div {
     width: 100%;
     margin: 0;
   }
+  .section_onycholysis > div:nth-child(1),
   .section_burningRootNail > div:nth-child(1),
   .section_podology > div:nth-child(1) {
     margin-bottom: 24px !important;
@@ -954,8 +984,46 @@
   .section_question > div:nth-child(2) {
     justify-content: center;
   }
+  .section_strike {
+    flex-direction: column-reverse;
+  }
+  .section_strike > div {
+    width: 100% !important;
+    margin: 0;
+  }
+  .section_strike > div:nth-child(2) {
+    margin-bottom: 20px !important;
+  }
+  .section_strike > div:nth-child(1) {
+    justify-content: center;
+  }
+  .section_Local_stimulation {
+    flex-direction: column;
+  }
+  .section_Local_stimulation > div {
+    width: 100% !important;
+  }
+  .section_Local_stimulation > div:nth-child(1) {
+    margin-bottom: 20px !important;
+  }
+  .section_Local_stimulation > div:nth-child(2) {
+    justify-content: center;
+  }
+  .section_Agents > div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .section_Agents > div > div {
+    width: 100% !important;
+    margin: 0px;
+    margin-bottom: 12px;
+    padding: 0 !important;
+  }
 }
 @media only screen and (max-width: 800px) {
+  .section_Local_stimulation,
+  .section_strike,
+  .section_onycholysis,
   .section_question,
   .section_complications_burning,
   .section_burningRootNail,
@@ -964,9 +1032,15 @@
   .blog_articles {
     padding: 0 12px !important;
   }
+  .section_Local_stimulation_right {
+    padding: 0 !important;
+  }
   .section_complications_burning {
     padding-bottom: 24px !important;
   }
+  .section_strike,
+  .section_Local_stimulation,
+  .section_onycholysis,
   .section_question,
   .section_podology,
   .section_podology2,
@@ -1004,6 +1078,11 @@
     height: 300px;
     object-fit: cover;
   }
+  .section_strike_right > img {
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+  }
 }
 @media only screen and (max-width: 600px) {
   .background_image_opacity,
@@ -1022,6 +1101,15 @@
   }
   .background_image_opacity > h1 {
     font-size: 20px;
+  }
+  .section_strike_right > img {
+    width: 300px;
+    height: 210px;
+    object-fit: cover;
+  }
+  .section_Local_stimulation_left > img {
+    width: 300px;
+    height: 200px;
   }
 }
 @media only screen and (max-width: 350px) {

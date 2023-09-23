@@ -3,6 +3,7 @@ import styles from "./layout.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import PhoneIcon from "@/assets/icons/phone";
+import { CONFIG } from "@/constant/config";
 
 const Layout = ({ children }) => {
   const [isScroll, setIsScroll] = useState(false);
@@ -24,7 +25,7 @@ const Layout = ({ children }) => {
       <Header isScroll={isScroll} />
       <div className={styles.page_body}>{children}</div>
       <Footer />
-      <a className={styles.contact_button} href="tel:09390624049">
+      <a className={styles.contact_button} href={`tel:${CONFIG.MOBILE_NUMBER}`}>
         <PhoneIcon />
       </a>
     </main>

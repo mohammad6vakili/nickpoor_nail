@@ -13,6 +13,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 import { Popover } from "antd";
 import HamburgerMenu from "../hamburger_menu";
+import { CONFIG } from "@/constant/config";
 
 const Header = ({ isScroll }) => {
   const [open, setOpen] = useState(false);
@@ -62,7 +63,7 @@ const Header = ({ isScroll }) => {
           </div>
           <div className={styles.phone}>
             <PhoneIcon />
-            ۰۹۳۹۰۶۲۴۰۴۹
+            {CONFIG.MOBILE_NUMBER}
           </div>
           <div>
             <ClockIcon />
@@ -111,11 +112,11 @@ const Header = ({ isScroll }) => {
           </ul>
         </nav>
         <div className={styles.phone_consultancy}>
-          <Link href="tel:09390624049">
+          <Link href={`tel:${CONFIG.MOBILE_NUMBER}`}>
             <div className={styles.circle}>
               <PhoneIcon />
             </div>
-            <h4>مشاوره تلفنی :۰۹۳۹۰۶۲۴۰۴۹</h4>
+            <h4>مشاوره تلفنی : {CONFIG.MOBILE_NUMBER}</h4>
           </Link>
         </div>
         {/* hamburger menu btn */}

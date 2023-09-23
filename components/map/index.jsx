@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
+import { CONFIG } from "@/constant/config";
 
 const MapComponent = () => {
   const AnyReactComponent = () => (
@@ -16,7 +17,7 @@ const MapComponent = () => {
   return (
     <MapContainer
       style={{ width: "100%", height: "100%", borderRadius: 30 }}
-      center={[36.270701307908205, 50.01019921670566]}
+      center={[CONFIG.ADRESS_LAT, CONFIG.ADDRESS_LNG]}
       zoom={16}
       scrollWheelZoom={false}
     >
@@ -25,7 +26,7 @@ const MapComponent = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker
-        position={[36.270701307908205, 50.01019921670566]}
+        position={[CONFIG.ADRESS_LAT, CONFIG.ADDRESS_LNG]}
         children={AnyReactComponent}
       />
       {/* <AnyReactComponent /> */}

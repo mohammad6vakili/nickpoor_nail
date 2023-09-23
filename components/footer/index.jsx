@@ -9,6 +9,7 @@ import SendMailIcon from "@/assets/icons/send_mail";
 import LocationFooterIcon from "@/assets/icons/location_footer";
 import PhoneFooterIcon from "@/assets/icons/phone_footer";
 import ClockFooterIcon from "@/assets/icons/clock_footer";
+import { CONFIG } from "@/constant/config";
 import { useState } from "react";
 import { message } from "antd";
 
@@ -90,7 +91,7 @@ const Footer = () => {
           </div>
           <div>
             <PhoneFooterIcon />
-            <span>۰۹۳۹۰۶۲۴۰۴۹</span>
+            <span>{CONFIG.MOBILE_NUMBER}</span>
           </div>
           <div>
             <ClockFooterIcon />

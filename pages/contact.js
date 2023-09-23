@@ -9,6 +9,7 @@ import ContactPhoneIcon from "@/assets/icons/contact_phone";
 import ContactInstagramIcon from "@/assets/icons/contact_instagram";
 import ContactWhatsappIcon from "@/assets/icons/contact_whatsapp";
 import ContactAddressIcon from "@/assets/icons/contact_address";
+import { CONFIG } from "@/constant/config";
 import dynamic from "next/dynamic";
 const MapComponent = dynamic(() => import("../components/map/index"), {
   ssr: false,
@@ -78,14 +79,14 @@ const Contact = () => {
         </section>
         <section className={styles.contactUs_information}>
           <div className={styles.contactUs_box}>
-            <Link href={"tel://09390624049"}>
+            <Link href={`tel:${CONFIG.MOBILE_NUMBER}`}>
               <ContactPhoneIcon />
               <h3>تماس مستقیم</h3>
-              <h4>۰۹۳۹۰۶۲۴۰۴۹</h4>
+              <h4>{CONFIG.MOBILE_NUMBER}</h4>
             </Link>
           </div>
           <div className={styles.contactUs_box}>
-            <Link href={"https://instagram.com/baharspedicure"} target="_blank">
+            <Link href={CONFIG.INSTAGRAM_ID} target="_blank">
               <ContactInstagramIcon />
               <h3>اینستاگرام</h3>
               <h4 style={{ direction: "ltr" }}>@baharspedicure</h4>
@@ -93,20 +94,17 @@ const Contact = () => {
             </Link>
           </div>
           <div className={styles.contactUs_box}>
-            <Link href={"whatsapp://send?phone=09390624049"}>
+            <Link href={CONFIG.WHATSAPP_NUMBER}>
               <ContactWhatsappIcon />
               <h3>پیام به واتساپ</h3>
-              <h4>۰۹۳۹۰۶۲۴۰۴۹</h4>
+              <h4>{CONFIG.MOBILE_NUMBER}</h4>
             </Link>
           </div>
         </section>
         <section className={styles.section_Address}>
           <div className={styles.Address1}>
             <ContactAddressIcon />
-            <h3>
-              آدرس : قزوین ، چهار راه شهرداری ، ضلع شرقی ، پلاک ۴۶ ، طبقه ۲ ،
-              واحد ۳ ، جنب آموزشگاه فارابی
-            </h3>
+            <h3>{CONFIG.ADRESS}</h3>
           </div>
         </section>
         <section class={styles.section_about}>

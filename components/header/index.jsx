@@ -24,7 +24,7 @@ const Header = ({ isScroll }) => {
       </li>
       <li>
         <Link href={"/categories/nail_digging_into_the_flesh"}>
-          فرو رفتن ناخن در گوشت
+          درمان فرو رفتن ناخن در گوشت
         </Link>
       </li>
       <li>
@@ -34,7 +34,7 @@ const Header = ({ isScroll }) => {
         <Link href={"/categories/pedicure_treatment"}>پدیکور درمانی</Link>
       </li>
       <li>
-        <Link href={"/categories/pedicure_treatment"}>درمان ترک پا</Link>
+        <Link href={"/categories/treatment_of_cracked_feet"}>درمان ترک پا</Link>
       </li>
     </ul>
   );

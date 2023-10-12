@@ -93,12 +93,14 @@
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  padding-right: 12px;
 }
-.prescription_description > p {
+.prescription_description > li {
   color: #555;
   font-size: 15px;
   font-family: "IRANSansWeb";
   text-align: justify;
+  margin-top: 8px;
 }
 .section_ertonil_left {
   width: 50%;
@@ -306,12 +308,14 @@
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  padding-right: 12px;
 }
-.taking_care_description > p {
+.taking_care_description > li {
   color: #555;
   font-size: 15px;
   font-family: "IRANSansWeb";
   text-align: justify;
+  margin-top: 8px;
 }
 
 /* Customer_satisfaction */

@@ -214,7 +214,7 @@ const Home = () => {
                 <Image src={CategroySliderTwo} alt="Category" />
               </div>
               <div className={styles.detail}>
-                <h3>فرورفتن ناخن در گوشت</h3>
+                <h3>درمان فرو رفتن ناخن در گوشت</h3>
                 <span>
                   یک مشکل شایع در پا است که در آن گوشه یا لبه ناخن پا به داخل
                   پوست اطراف آن رشد میکند. این امر میتواند باعث درد، قرمزی، تورم
@@ -292,7 +292,9 @@ const Home = () => {
               </div>
               <div className={styles.swiper_slide_btn}>
                 <button
-                  onClick={() => router.push("/categories/pedicure_treatment")}
+                  onClick={() =>
+                    router.push("/categories/treatment_of_cracked_feet")
+                  }
                 >
                   <div>
                     <span>بیشتر بدانید</span>

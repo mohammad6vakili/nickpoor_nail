@@ -67,11 +67,13 @@ const Footer = () => {
 
           <Link href={"/categories/ortonixia"}>ارتونیل (ارتودنسی ناخن)</Link>
           <Link href={"/categories/nail_digging_into_the_flesh"}>
-            فرو رفتن ناخن در گوشت
+            درمان فرو رفتن ناخن در گوشت
           </Link>
           <Link href={"/categories/nail_fungus"}>درمان قارچ ناخن</Link>
           <Link href={"/categories/pedicure_treatment"}>پدیکور درمانی</Link>
-          <Link href={"/categories/pedicure_treatment"}>درمان ترک پا</Link>
+          <Link href={"/categories/treatment_of_cracked_feet"}>
+            درمان ترک پا
+          </Link>
         </div>
         <div className={styles.link}>
           <span>

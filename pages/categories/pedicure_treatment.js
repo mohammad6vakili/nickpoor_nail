@@ -7,7 +7,7 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import OrtonixiaImageOne from "@/assets/images/ortonixia.png";
+import PedicureTreatmentBanner from "@/assets/images/pedicure_treatment_banner.png";
 import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
 import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
 import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
@@ -60,7 +60,7 @@ const PedicureTreatment = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={OrtonixiaImageOne} alt="پدیکور درمانی" />
+          <Image src={PedicureTreatmentBanner} alt="پدیکور درمانی" />
           <div className={styles.background_image_opacity}>
             <h1>پدیکور درمانی</h1>
           </div>
@@ -74,11 +74,11 @@ const PedicureTreatment = () => {
               </div>
               <div className={styles.ertonil_description}>
                 <p>
-                  یک متخصص پا (Podologist) یک پدیکور پزشکی انجام می‌دهد که تفاوت
-                  قابل توجهی با پدیکور در سالن‌های زیبایی دارد. در پدیکور درمانی
-                  میخچه‌ها، پینه‌ها، ترک‌ها و بافت‌های ضخیم شده از سطح پا حذف
-                  می‌شود. پودولوژیست می‌تواند داروهایی را برای بیماری های قارچی،
-                  تعریق بیش از حد و مراقبت‌های طول درمان تجویز کند
+                  در این روش، ناخن های پا به شکل صحیح کوتاه می شوند و گوشت های
+                  اضافه اطراف ناخن ها برداشته می شوند. همچنین، پوست پا نیز لایه
+                  برداری می شود تا از خشکی و ترک خوردگی آن جلوگیری شود. پدیکور
+                  درمانی توسط پودولوژیست یک روش مراقبت از پا است که علاوه بر
+                  بهبود ظاهری ناخن های پا، به حفظ سلامت آنها نیز کمک می کند.
                 </p>
               </div>
               <div className={styles.prescription}>
@@ -135,19 +135,6 @@ const PedicureTreatment = () => {
         </section>
         <section className={styles.section_question}>
           <div className={styles.section_question_right}>
-            <div className={styles.question}>
-              <div className={styles.question_title}>
-                <h2>درمان ناخن فرو رفته در گوشت چیست؟</h2>
-              </div>
-            </div>
-            <div className={styles.question_description}>
-              <p>
-                باید درمان به صورت اصولی انجام شود. در مرحله اول از پوشیدن کفش
-                خودداری کرده و در اولین فرصت با شماره های کلینیک درمان ناخن تماس
-                گرفته تا مراحل درمان برای شما توضیح داده شود.
-              </p>
-            </div>
-
             <div className={styles.question}>
               <div className={styles.question_title}>
                 <h2>مراحل پدیکور درمانی</h2>

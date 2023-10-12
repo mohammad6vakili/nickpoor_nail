@@ -7,7 +7,7 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import OrtonixiaImageOne from "@/assets/images/ortonixia.png";
+import NailDiggingIntoTheFleshBanner from "@/assets/images/nail_digging_into_the_flesh_banner.png";
 import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
 import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
 import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
@@ -21,29 +21,31 @@ const NailDiggingIntoTheFlesh = () => {
     <>
       {/* head */}
       <Head>
-        <title>اولین کلینیک درمان ناخن در قزوین | فرو رفتن ناخن در گوشت</title>
+        <title>
+          اولین کلینیک درمان ناخن در قزوین | درمان فرو رفتن ناخن در گوشت
+        </title>
         <meta
           name="description"
-          content="اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | فرو رفتن ناخن در گوشت"
+          content="اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | درمان فرو رفتن ناخن در گوشت"
         />
         <meta
           property="og:title"
-          content="اولین کلینیک درمان ناخن در قزوین | فرو رفتن ناخن در گوشت"
+          content="اولین کلینیک درمان ناخن در قزوین | درمان فرو رفتن ناخن در گوشت"
         />
         <meta
           property="og:description"
-          content="اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | فرو رفتن ناخن در گوشت"
+          content="اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | درمان فرو رفتن ناخن در گوشت"
         />
         <meta property="og:url" content="https://baharpod.ir/" />
         <meta property="og:site_name" content="کلینیک درمان ناخن" />
         <meta
           name="twitter:title"
-          content="اولین کلینیک درمان ناخن در قزوین | فرو رفتن ناخن در گوشت"
+          content="اولین کلینیک درمان ناخن در قزوین | درمان فرو رفتن ناخن در گوشت"
         />
         <meta
           name="twitter:description"
           content="
-          اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | فرو رفتن ناخن در گوشت"
+          اولین کلینیک درمان ناخن در قزوین با جدیدترین و مدرن ترین شیوه های درمان روز دنیا | درمان فرو رفتن ناخن در گوشت"
         />
         <meta
           name="viewport"
@@ -61,9 +63,12 @@ const NailDiggingIntoTheFlesh = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={OrtonixiaImageOne} alt="فرو رفتن ناخن در گوشت" />
+          <Image
+            src={NailDiggingIntoTheFleshBanner}
+            alt="درمان فرو رفتن ناخن در گوشت"
+          />
           <div className={styles.background_image_opacity}>
-            <h1>فرو رفتن ناخن در گوشت</h1>
+            <h1>درمان فرو رفتن ناخن در گوشت</h1>
           </div>
         </section>
         <section className={styles.section_ertonil}>
@@ -75,9 +80,9 @@ const NailDiggingIntoTheFlesh = () => {
               </div>
               <div className={styles.ertonil_description}>
                 <p>
-                  فرو رفتن ناخن در گوشت زمانی اتفاق می‌افتد که ناخن از کناره‌ها
-                  به دلایل مختلف در گوشت رشد کرده و انگشت را دچار التهاب و عفونت
-                  می‌کند.
+                  یک مشکل شایع در پا است که در آن گوشه یا لبه ناخن پا به داخل
+                  پوست اطراف آن رشد میکند. این امر میتواند باعث درد، قرمزی، تورم
+                  و عفونت شود
                 </p>
               </div>
               <div className={styles.prescription}>
@@ -86,19 +91,15 @@ const NailDiggingIntoTheFlesh = () => {
                     <div className={styles.dot1}></div>
                   </div>
                   <div>
-                    <h2>علائم ناخن فرو رفته در گوشت چیست؟</h2>
+                    <h2>علائم فرورفتن ناخن در گوشت عبارتند از:</h2>
                   </div>
                 </div>
-                <div className={styles.prescription_description}>
-                  <p>
-                    ملتهب و قرمز شدن، انگشت احساس درد در ناحیه انگشت، ترشح عفونت
-                    از ناحیه مورد نظر، ورم انگشت، تغییر رنگ ناخن و خونریزی. در
-                    صورت دیدن هر یک از این علائم حتما به پزشک مراجعه شود و از
-                    خود درمانی پرهیز کرده زیرا شرایط را وخیم تر می‌کند. اگر
-                    بیمار دیابت داشته باشد می‌تواند به مراتب خطرناک‌تر از شرایط
-                    بیمار عادی باشد.
-                  </p>
-                </div>
+                <ul className={styles.prescription_description}>
+                  <li>درد، قرمزی و تورم در اطراف ناخن</li>
+                  <li>ترشح چرکی از اطراف ناخن</li>
+                  <li>حساسیت به لمس</li>
+                  <li>مشکل در راه رفتن</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@ const NailDiggingIntoTheFlesh = () => {
             <div>
               <Image
                 src={OrtonixiaContentImageOne}
-                alt="فرو رفتن ناخن در گوشت"
+                alt="درمان فرو رفتن ناخن در گوشت"
               />
             </div>
           </div>
@@ -116,7 +117,7 @@ const NailDiggingIntoTheFlesh = () => {
             <div className={styles.ertonil_nails_right}>
               <Image
                 src={OrtonixiaContentImageTwo}
-                alt="فرو رفتن ناخن در گوشت"
+                alt="درمان فرو رفتن ناخن در گوشت"
               />
             </div>
             <div className={styles.ertonil_nails_left}>
@@ -125,20 +126,20 @@ const NailDiggingIntoTheFlesh = () => {
                   <div className={styles.dot1}></div>
                 </div>
                 <div>
-                  <h2>در چه صورتی ناخن در گوشت فرو می‌رود؟</h2>
+                  <h2>به چه دلایلی ناخن در گوشت فرو می رود؟</h2>
                 </div>
               </div>
               <div className={styles.ertonil_nails_left_description}>
                 <p>
-                  ناخن در صورتی در گوشت اطراف انگشت فرو می‌رود که تحت فشار قرار
-                  بگیرد. <br />
-                  از کناره های ناخن به صورت مداوم گرفتن آسیب زیادی به ناخن وارد
-                  می‌کند که باعث جمع شدن گوشت از اطراف می‌شود و فشار چند برابر
-                  به ناخنی که از کناره در حال رشد دوباره است وارد کرده و ناخن
-                  تحت تاثیر فشار گوشت در داخل بافت رشد می‌کند و ایجاد درد،
-                  التهاب و عفونت می‌شود. ناخن ها اگر از کناره بصورت غیر اصولی و
-                  بدون مکمل درمانی گرفته شوند باعث زاویه دار شدن ناخن شده و رشد
-                  ناخن از مسیر اصلی خارج می‌گردد و به داخل گوشت رشد می‌کند.
+                  دلایل مختلفی برای فرورفتن ناخن در گوشت وجود دارد. یکی از دلایل
+                  اصلی فرورفتن ناخن در گوشت، کوتاه کردن ناخن بیش از حد کوتاه
+                  است. زمانی که ناخنها بیش از حد کوتاه میشوند، گوشههای تیز ایجاد
+                  میشود که میتوانند به داخل پوست فرو بروند. <br />
+                  کفشهای تنگ یا پاشنه بلند میتوانند به انگشتان پا فشار وارد کنند
+                  و باعث فرورفتن ناخن شوند. <br />
+                  آسیب به ناخن، مانند ضربه یا شکستگی همچنین برخی از بیماریهای
+                  پوستی، مانند پسوریازیس، میتوانند باعث نازک شدن پوست اطراف ناخن
+                  شوند و خطر فرورفتن ناخن را افزایش دهند.
                 </p>
               </div>
             </div>
@@ -153,9 +154,9 @@ const NailDiggingIntoTheFlesh = () => {
             </div>
             <div className={styles.question_description}>
               <p>
-                باید درمان به صورت اصولی انجام شود. در مرحله اول از پوشیدن کفش
-                خودداری کرده و در اولین فرصت با شماره های کلینیک درمان ناخن تماس
-                گرفته تا مراحل درمان برای شما توضیح داده شود.
+                در مرحله اول از پوشیدن کفش خودداری کرده و در اولین فرصت با شماره
+                های کلینیک درمان ناخن تماس گرفته تا مراحل درمان برای شما توضیح
+                داده شود.
               </p>
             </div>
 
@@ -180,15 +181,12 @@ const NailDiggingIntoTheFlesh = () => {
               <li>
                 <span>پدیکور درمانی</span>
               </li>
-              <li>
-                <span>ارتونیل</span>
-              </li>
             </ul>
           </div>
           <div className={styles.section_question_left}>
             <Image
               src={OrtonixiaContentImageThree}
-              alt="فرو رفتن ناخن در گوشت"
+              alt="درمان فرو رفتن ناخن در گوشت"
             />
             <DottedBackgroundIcon />
           </div>
@@ -197,7 +195,7 @@ const NailDiggingIntoTheFlesh = () => {
           <div className={styles.ertonil_advantage_right}>
             <Image
               src={OrtonixiaContentImageFour}
-              alt="فرو رفتن ناخن در گوشت"
+              alt="درمان فرو رفتن ناخن در گوشت"
             />
             <CloudBackgroundIcon />
           </div>
@@ -224,8 +222,10 @@ const NailDiggingIntoTheFlesh = () => {
             <div className={styles.taking_care_description}>
               <p>
                 بهترین درمان ناخن فرو رفته در گوشت که به صورت لوله‌ای شکل است،
-                فرو رفتن ناخن در گوشت می‌باشد که نتایج بسیار عالی برای بیمار به
-                همراه خواهد داشت که بدون جراحی، درد و نقاهت انجام می‌شود.
+                درمان در کلینیک می‌باشد که نتایج بسیار عالی برای بیمار به همراه
+                خواهد داشت که بدون جراحی، درد و نقاهت انجام می‌شود. برای درمان و
+                مشاوره همین حالا میتوانید با کلینیک درمان ناخن بهار پودولوژی
+                تماس بگیرید.
               </p>
             </div>
           </div>

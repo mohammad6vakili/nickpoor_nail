@@ -34,18 +34,19 @@ const HamburgerMenu = ({ open, setOpen }) => {
       <RxDashboard style={{ fontSize: 20 }} />,
       [
         getItem("ارتونیل (ارتودنسی ناخن)", "2"),
-        getItem("ناخن فرورفته در گوشت", "3"),
+        getItem("درمان فرو رفتن ناخن در گوشت", "3"),
         getItem("درمان قارچ ناخن", "4"),
         getItem("پدیکور درمانی", "5"),
+        getItem("درمان ترک پا", "6"),
       ]
     ),
-    getItem("وبلاگ", "6", <PiBooksLight style={{ fontSize: 20 }} />),
+    getItem("وبلاگ", "7", <PiBooksLight style={{ fontSize: 20 }} />),
     getItem(
       "درباره ما",
-      "7",
+      "8",
       <IoIosInformationCircleOutline style={{ fontSize: 20 }} />
     ),
-    getItem("تماس با ما", "8", <BsTelephone style={{ fontSize: 20 }} />),
+    getItem("تماس با ما", "9", <BsTelephone style={{ fontSize: 20 }} />),
   ];
 
   const handleSelectMenuItem = (e) => {
@@ -66,12 +67,15 @@ const HamburgerMenu = ({ open, setOpen }) => {
         router.push("/categories/pedicure_treatment");
         break;
       case "6":
-        router.push("/blog");
+        router.push("/categories/treatment_of_cracked_feet");
         break;
       case "7":
-        router.push("/about");
+        router.push("/blog");
         break;
       case "8":
+        router.push("/about");
+        break;
+      case "9":
         router.push("/contact");
         break;
       default:

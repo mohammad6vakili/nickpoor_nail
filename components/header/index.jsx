@@ -24,7 +24,7 @@ const Header = ({ isScroll }) => {
       </li>
       <li>
         <Link href={"/categories/nail_digging_into_the_flesh"}>
-          ناخن فرو رفته در گوشت
+          فرو رفتن ناخن در گوشت
         </Link>
       </li>
       <li>
@@ -32,6 +32,9 @@ const Header = ({ isScroll }) => {
       </li>
       <li>
         <Link href={"/categories/pedicure_treatment"}>پدیکور درمانی</Link>
+      </li>
+      <li>
+        <Link href={"/categories/pedicure_treatment"}>درمان ترک پا</Link>
       </li>
     </ul>
   );
@@ -45,21 +48,18 @@ const Header = ({ isScroll }) => {
       <div className={styles.header_top}>
         {/* Social_media */}
         <div className={styles.Social_media}>
-          <Link href={"https://whatsapp.com"} target="_blank">
+          <Link href={CONFIG.WHATSAPP_NUMBER} target="_blank">
             <WhatsappIcon />
           </Link>
-          <Link href={"https://instagram.com"} target="_blank">
+          <Link href={CONFIG.INSTAGRAM_ID} target="_blank">
             <InstagramIcon />
-          </Link>
-          <Link href={"https://telegram.org"} target="_blank">
-            <TelegramIcon />
           </Link>
         </div>
         {/* information */}
         <div className={styles.information}>
           <div className={styles.gps}>
             <GpsIcon />
-            <h4>آدرس : قزوین ، چهار راه شهرداری ، پلاک ۴۶ ، طبقه ۲ ، واحد ۳</h4>
+            <h4>{CONFIG.ADRESS}</h4>
           </div>
           <div className={styles.phone}>
             <PhoneIcon />

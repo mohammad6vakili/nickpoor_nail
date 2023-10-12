@@ -12,6 +12,7 @@ import WhatsappIcon from "@/assets/icons/whatsapp";
 import InstagramIcon from "@/assets/icons/instagram";
 import TelegramIcon from "@/assets/icons/telegram";
 import { useRouter } from "next/router";
+import { CONFIG } from "@/constant/config";
 
 const HamburgerMenu = ({ open, setOpen }) => {
   const router = useRouter();
@@ -108,14 +109,11 @@ const HamburgerMenu = ({ open, setOpen }) => {
           />
         </div>
         <div className={styles.hamburger_menu_footer}>
-          <Link href={"https://whatsapp.com"} target="_blank">
+          <Link href={CONFIG.WHATSAPP_NUMBER} target="_blank">
             <WhatsappIcon />
           </Link>
-          <Link href={"https://instagram.com"} target="_blank">
+          <Link href={CONFIG.INSTAGRAM_ID} target="_blank">
             <InstagramIcon />
-          </Link>
-          <Link href={"https://telegram.org"} target="_blank">
-            <TelegramIcon />
           </Link>
         </div>
       </div>

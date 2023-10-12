@@ -56,6 +56,7 @@
 }
 .article > div > img {
   width: 100%;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -558,6 +559,7 @@
   width: 49%;
   display: flex;
   flex-direction: column;
+  padding: 0 50px;
 }
 
 .Agents_top_left_title {
@@ -618,7 +620,7 @@
 }
 
 .burningRootNail_line {
-  width: 180px;
+  width: 260px;
   height: 6px;
   background: linear-gradient(
     270deg,

@@ -9,6 +9,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import HomeSectionOneImage from "@/assets/images/home_section_one_image.png";
 import MoreArrowIcon from "@/assets/icons/more_arrow";
 import GalleryOneImage from "@/assets/images/gallery1.png";
+import GalleryTwoImage from "@/assets/images/gallery2.png";
 import GalleryThreeImage from "@/assets/images/gallery3.png";
 import GalleryFourImage from "@/assets/images/gallery4.png";
 import GalleryFiveImage from "@/assets/images/gallery5.png";
@@ -23,6 +24,8 @@ import SwiperPrevIcon from "@/assets/icons/swiper_prev";
 import CategroySliderOne from "@/assets/images/category_slider_1.png";
 import CategroySliderTwo from "@/assets/images/category_slider_2.png";
 import CategroySliderThree from "@/assets/images/category_slider_3.png";
+import CategroySliderFour from "@/assets/images/category_slider_4.png";
+import CategroySliderFive from "@/assets/images/category_slider_5.png";
 import CommentUserImage from "@/assets/images/comment_user.png";
 import StarIcon from "@/assets/images/star";
 import { useRouter } from "next/router";
@@ -131,16 +134,14 @@ const Home = () => {
         <section className={styles.section_one}>
           <div className={styles.section_one_right}>
             <div className={styles.title}>
-              <h1>درباره کلینیک ناخن</h1>
+              <h1>درباره کلینیک</h1>
               <div className={styles.line}></div>
             </div>
             <div className={styles.description}>
               <p>
-                کلینیک فوق تخصصی درمان ناخن با بیش از یک دهه فعالیت مستمر در
-                کلاس جهانی، متنوع‌ترین و به روزترین خدمات تشخیصی و درمانی ناخن
-                را به ایرانیان و بیماران خارج از کشور ارائه می دهد. این مجموعه
-                با دارا بودن پزشک مسلط به بیماری‌های ناخن بهترین خدمات درمانی را
-                به شما عزیزان ارائه می‌دهد.
+                کلینیک تخصصی بهار نیک پور با بیش از یک دهه فعالیت در زمینه ی
+                تشخیص و درمان بیماری های ناخن آماده ی ارائه ی بهترین خدمات به
+                شما عزیزان می باشد.
               </p>
             </div>
             <div className={styles.section_one_right_btn}>
@@ -161,7 +162,7 @@ const Home = () => {
         {/* section_two */}
         <section className={styles.section_two}>
           <div className={styles.section_two_title}>
-            <h1>کلینیک درمان بیماری های ناخن</h1>
+            <h1>خدمات کلینیک درمان ناخن</h1>
             <div className={styles.line1}></div>
           </div>
           <Swiper
@@ -190,8 +191,9 @@ const Home = () => {
               <div className={styles.detail}>
                 <h3>ارتونیل (ارتودنسی ناخن)</h3>
                 <span>
-                  سیم‌های مخصوصی به روی صفحه ناخن نصب می‌شود، که ناخن را از
-                  کناره‌ها بلند کرده و از رشد آن به داخل بافت ها جلوگیری می کند.
+                  یک روش غیرجراحی برای درمان ناخن فرورفته در گوشت است. این روش
+                  شامل استفاده از سیم های مخصوصی است که بر روی صفحه ناخن نصب می
+                  شوند ...
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
@@ -212,11 +214,11 @@ const Home = () => {
                 <Image src={CategroySliderTwo} alt="Category" />
               </div>
               <div className={styles.detail}>
-                <h3>ناخن فرو رفته در گوشت</h3>
+                <h3>فرورفتن ناخن در گوشت</h3>
                 <span>
-                  فرو رفتن ناخن در گوشت زمانی اتفاق می‌افتد که ناخن از کناره‌ها
-                  به دلایل مختلف در گوشت رشد کرده و انگشت را دچار التهاب و عفونت
-                  می‌کند.
+                  یک مشکل شایع در پا است که در آن گوشه یا لبه ناخن پا به داخل
+                  پوست اطراف آن رشد میکند. این امر میتواند باعث درد، قرمزی، تورم
+                  و عفونت شود ...
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
@@ -239,9 +241,9 @@ const Home = () => {
               <div className={styles.detail}>
                 <h3>درمان قارچ ناخن</h3>
                 <span>
-                  کلینیک بهار پودولوژی با بهره گیری از جدیدترین متد روز دنیا و
-                  پیشرفته‌ترین تجهیزات تشخیصی و درمانی برای درمان بیماری‌های
-                  عفونی و قارچی ناخن آماده ارائه خدمات به شما عزیزان می‌باشد.
+                  کلینیک درمان قارچ ناخن پا کلینیک بهار پودولوژی با بهره گیری از
+                  جدیدترین متد روز دنیا و پیشرفتهترین تجهیزات تشخیصی و درمانی
+                  برای درمان بیماریهای عفونی و قارچی ناخن ...
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
@@ -255,15 +257,37 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
-                <Image src={CategroySliderOne} alt="Category" />
+                <Image src={CategroySliderFour} alt="Category" />
               </div>
               <div className={styles.detail}>
                 <h3>پدیکور درمانی</h3>
                 <span>
-                  در پدیکور درمانی میخچه‌ها، پینه‌ها، ترک‌ها و بافت‌های ضخیم شده
-                  از سطح پا حذف می‌شود. پودولوژیست می‌تواند داروهایی را برای
-                  بیماری های قارچی، تعریق بیش از حد و مراقبت‌های طول درمان تجویز
-                  کند.
+                  در این روش، ناخن های پا به شکل صحیح کوتاه می شوند و گوشت های
+                  اضافه اطراف ناخن ها برداشته می شوند. همچنین، پوست پا نیز لایه
+                  برداری می شود ...
+                </span>
+              </div>
+              <div className={styles.swiper_slide_btn}>
+                <button
+                  onClick={() => router.push("/categories/pedicure_treatment")}
+                >
+                  <div>
+                    <span>بیشتر بدانید</span>
+                    <MoreArrowIcon />
+                  </div>
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
+              <div>
+                <Image src={CategroySliderFive} alt="Category" />
+              </div>
+              <div className={styles.detail}>
+                <h3>درمان ترک پا</h3>
+                <span>
+                  ترک پا یک مشکل شایع پوستی است که در آن پوست کف پا خشک و ترک
+                  خورده می شود. ترک پا می تواند باعث درد، ناراحتی و حتی خونریزی
+                  شود. درمان ترک پا به شدت آن بستگی دارد ...
                 </span>
               </div>
               <div className={styles.swiper_slide_btn}>
@@ -292,7 +316,7 @@ const Home = () => {
                   <Image
                     width={100}
                     height={100}
-                    src={GalleryFourImage}
+                    src={GalleryTwoImage}
                     alt="Gallery"
                   />
                 </Link>
@@ -328,13 +352,6 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          {/* <div className={styles.section_three_btn}>
-            <button>
-              <div>
-                <span>مشاهده تصاویر بیشتر</span>
-              </div>
-            </button>
-          </div> */}
         </section>
         {/* section_four */}
         <section className={styles.section_four}>
@@ -350,8 +367,10 @@ const Home = () => {
               <div className={styles.detail_blog}>
                 <h3>پودولوژی چیست؟</h3>
                 <span>
-                  پودولوژی به عنوان جایگزینی برای درمان‌های پر عارضه سنتی و
-                  قدیمی می‌باشد. پودولوژی (Podology) چیست؟
+                  پودولوژی شاخه ای از پزشکی است که به تشخیص، درمان و پیشگیری از
+                  بیماری ها و اختلالات پا و ناخن می پردازد.این طیف وسیعی از
+                  فعالیت‌ها را با هدف تشخیص و درمان بیماری‌های مختلف پا مانند
+                  ناخن‌های فرورفته ...
                 </span>
               </div>
               <div className={styles.blog_btn}>
@@ -370,15 +389,16 @@ const Home = () => {
                 <Image src={BlogTwoImage} alt="Blog" />
               </div>
               <div className={styles.detail_blog}>
-                <h3>سوزاندن ریشه ی ناخن</h3>
+                <h3>پیشگیری از ابتلا به قارچ ناخن</h3>
                 <span>
-                  در گذشته، ناخن های فرو رفته در گوشت توسط پزشکان از طریق کشیدن
-                  و سوزاندن ریشه ناخن انجام میشد که این ...
+                  قارچ ناخن یک عفونت شایع است که میتواند ناخنهای پا یا دست را
+                  درگیر کند. این عفونت میتواند باعث تغییر رنگ، ضخیم شدن، شکنندگی
+                  و جدا شدن ناخن شود ...
                 </span>
               </div>
               <div className={styles.blog_btn}>
                 <button>
-                  <Link href={"/blog/burn_nail"}>
+                  <Link href={"/blog/prevention_of_nail_fungus"}>
                     <div>
                       <span>ادامه مطلب</span>
                       <MoreArrowIcon />
@@ -394,9 +414,9 @@ const Home = () => {
               <div className={styles.detail_blog}>
                 <h3>اونیکولیز ، جدا شدن ناخن از بستر </h3>
                 <span>
-                  به جدا شدن ناخن از بستر اصطلاحا اونیکولیز گفته می شود.این جدا
-                  شدگی از شیار دیستال یا زیر صفحه ناخن شروع می شود و ممکن است
-                  چند ناخن را درگیر کند. ناخن جدا شده...
+                  اونیکولیز وضعیتی است که در آن ناخن از پوست زیر آن جدا می شود.
+                  این می تواند در اثر عوامل مختلفی مانند ضربه، عفونت های قارچی،
+                  پسوریازیس، آلرژی یا داروها ایجاد شود. جدا شدن ناخن ...
                 </span>
               </div>
               <div className={styles.blog_btn}>

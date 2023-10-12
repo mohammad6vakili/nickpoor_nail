@@ -23,15 +23,15 @@ const Footer = () => {
           <Image src={Logo} alt="Bahar Podology" />
         </div>
         <div>
-          <Link href={"https://whatsapp.com"} target="_blank">
+          <Link href={CONFIG.WHATSAPP_NUMBER} target="_blank">
             <WhatsappFooterIcon />
           </Link>
-          <Link href={"https://instagram.com"} target="_blank">
+          <Link href={CONFIG.INSTAGRAM_ID} target="_blank">
             <InstagramFooterIcon />
           </Link>
-          <Link href={"https://telegram.org"} target="_blank">
+          {/* <Link href={"https://telegram.org"} target="_blank">
             <TelegramFooter />
-          </Link>
+          </Link> */}
         </div>
       </div>
       {/* line_footer */}
@@ -67,10 +67,11 @@ const Footer = () => {
 
           <Link href={"/categories/ortonixia"}>ارتونیل (ارتودنسی ناخن)</Link>
           <Link href={"/categories/nail_digging_into_the_flesh"}>
-            ناخن فرو رفته در گوشت
+            فرو رفتن ناخن در گوشت
           </Link>
           <Link href={"/categories/nail_fungus"}>درمان قارچ ناخن</Link>
           <Link href={"/categories/pedicure_treatment"}>پدیکور درمانی</Link>
+          <Link href={"/categories/pedicure_treatment"}>درمان ترک پا</Link>
         </div>
         <div className={styles.link}>
           <span>
@@ -85,9 +86,7 @@ const Footer = () => {
         <div className={styles.footer_information}>
           <div>
             <LocationFooterIcon />
-            <span>
-              آدرس : قزوین ، چهار راه شهرداری ، پلاک ۴۶ ، طبقه ۲ ، واحد ۳
-            </span>
+            <span>{CONFIG.ADRESS}</span>
           </div>
           <div>
             <PhoneFooterIcon />
@@ -95,7 +94,7 @@ const Footer = () => {
           </div>
           <div>
             <ClockFooterIcon />
-            <span>۱۱ صبح تا ۳ بعدازظهر</span>
+            <span>۹ صبح الی ۹ شب</span>
           </div>
         </div>
       </div>

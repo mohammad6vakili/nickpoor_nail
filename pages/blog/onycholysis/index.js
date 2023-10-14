@@ -56,7 +56,7 @@ const Onycholysis = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={BannerImage} alt="اونیکولیز" />
+          <Image src={BannerImage} alt="اونیکولیز" loading="lazy" />
           <div className={styles.background_image_opacity}>
             <h1>اونیکولیز</h1>
           </div>
@@ -99,13 +99,13 @@ const Onycholysis = () => {
           </div>
           <div className={styles.section_burningRootNail_left}>
             <div>
-              <Image src={ContentImageOne} alt="اونیکولیز" />
+              <Image src={ContentImageOne} alt="اونیکولیز" loading="lazy" />
             </div>
           </div>
         </section>
         <section className={styles.section_strike}>
           <div className={styles.section_strike_right}>
-            <Image src={ContentImageTwo} alt="اونیکولیز" />
+            <Image src={ContentImageTwo} alt="اونیکولیز" loading="lazy" />
           </div>
           <div className={styles.section_strike_left}>
             <div className={styles.strike_left}>
@@ -186,7 +186,7 @@ const Onycholysis = () => {
             </div>
           </div>
           <div className={styles.section_Local_stimulation_left}>
-            <Image src={ContentImageThree} />
+            <Image src={ContentImageThree} alt="اونیکولیز" loading="lazy" />
             <DottedBackgroundIcon />
             <div className={styles.vector}>
               <svg

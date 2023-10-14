@@ -11,6 +11,7 @@ const MapComponent = () => {
         height={40}
         src={Logo}
         alt="کلینیک درمان ناخن بهار پودولوژی"
+        loading="lazy"
       />
     </div>
   );

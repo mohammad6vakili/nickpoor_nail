@@ -8,12 +8,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import HomeSectionOneImage from "@/assets/images/home_section_one_image.png";
 import MoreArrowIcon from "@/assets/icons/more_arrow";
-import GalleryOneImage from "@/assets/images/gallery1.png";
-import GalleryTwoImage from "@/assets/images/gallery2.png";
-import GalleryThreeImage from "@/assets/images/gallery3.png";
-import GalleryFourImage from "@/assets/images/gallery4.png";
-import GalleryFiveImage from "@/assets/images/gallery5.png";
-import GallerySixImage from "@/assets/images/gallery6.png";
 import BlogOneImage from "@/assets/images/blog1.png";
 import BlogTwoImage from "@/assets/images/blog2.png";
 import BlogThreeImage from "@/assets/images/blog3.png";
@@ -29,6 +23,12 @@ import CategroySliderFive from "@/assets/images/category_slider_5.png";
 import CommentUserImage from "@/assets/images/comment_user.png";
 import StarIcon from "@/assets/images/star";
 import { useRouter } from "next/router";
+import GalleryOneImage from "@/assets/gallery/1.jpg";
+import GalleryTwoImage from "@/assets/gallery/23.jpg";
+import GalleryThreeImage from "@/assets/gallery/14.jpg";
+import GalleryFourImage from "@/assets/gallery/13.jpg";
+import GalleryFiveImage from "@/assets/gallery/7.jpg";
+import GallerySixImage from "@/assets/gallery/4.jpg";
 
 const Home = () => {
   const array = [1, 1, 1, 1, 1, 1, 1, 1];
@@ -94,6 +94,7 @@ const Home = () => {
                 alt="Banner"
                 fill
                 objectFit={"cover"}
+                loading="lazy"
               />
               <div className={styles.home_slider_one_content}>
                 <h1>درمان بیماریهای ناخن با ارتونیل</h1>
@@ -106,6 +107,7 @@ const Home = () => {
                 alt="Banner"
                 fill
                 objectFit={"cover"}
+                loading="lazy"
               />
               <div className={styles.home_slider_two_content}>
                 <h1>درمان بیماری های پا</h1>
@@ -155,7 +157,11 @@ const Home = () => {
           </div>
           <div className={styles.section_one_left}>
             <div className={styles.Photo_background}>
-              <Image src={HomeSectionOneImage} alt="About Clinic" />
+              <Image
+                src={HomeSectionOneImage}
+                alt="About Clinic"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
@@ -186,7 +192,7 @@ const Home = () => {
           >
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
-                <Image src={CategroySliderOne} alt="Category" />
+                <Image src={CategroySliderOne} alt="Category" loading="lazy" />
               </div>
               <div className={styles.detail}>
                 <h3>ارتونیل (ارتودنسی ناخن)</h3>
@@ -211,7 +217,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
-                <Image src={CategroySliderTwo} alt="Category" />
+                <Image src={CategroySliderTwo} alt="Category" loading="lazy" />
               </div>
               <div className={styles.detail}>
                 <h3>درمان فرو رفتن ناخن در گوشت</h3>
@@ -236,7 +242,11 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
-                <Image src={CategroySliderThree} alt="Category" />
+                <Image
+                  src={CategroySliderThree}
+                  alt="Category"
+                  loading="lazy"
+                />
               </div>
               <div className={styles.detail}>
                 <h3>درمان قارچ ناخن</h3>
@@ -257,7 +267,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
-                <Image src={CategroySliderFour} alt="Category" />
+                <Image src={CategroySliderFour} alt="Category" loading="lazy" />
               </div>
               <div className={styles.detail}>
                 <h3>پدیکور درمانی</h3>
@@ -280,7 +290,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
-                <Image src={CategroySliderFive} alt="Category" />
+                <Image src={CategroySliderFive} alt="Category" loading="lazy" />
               </div>
               <div className={styles.detail}>
                 <h3>درمان ترک پا</h3>
@@ -320,12 +330,13 @@ const Home = () => {
                     height={100}
                     src={GalleryTwoImage}
                     alt="Gallery"
+                    loading="lazy"
                   />
                 </Link>
               </div>
               <div className={styles.gallery_right_bottom}>
                 <Link href={"/"}>
-                  <Image src={GallerySixImage} alt="Gallery" />
+                  <Image src={GallerySixImage} alt="Gallery" loading="lazy" />
                 </Link>
               </div>
             </div>
@@ -333,24 +344,32 @@ const Home = () => {
               <div className={styles.gallery_center_top}>
                 <div>
                   <Link href={"/"}>
-                    <Image src={GalleryThreeImage} alt="Gallery" />
+                    <Image
+                      src={GalleryThreeImage}
+                      alt="Gallery"
+                      loading="lazy"
+                    />
                   </Link>
                 </div>
                 <div>
                   <Link href={"/"}>
-                    <Image src={GalleryFourImage} alt="Gallery" />
+                    <Image
+                      src={GalleryFourImage}
+                      alt="Gallery"
+                      loading="lazy"
+                    />
                   </Link>
                 </div>
               </div>
               <div className={styles.gallery_center_bottom}>
                 <Link href={"/"}>
-                  <Image src={GalleryFiveImage} alt="Gallery" />
+                  <Image src={GalleryFiveImage} alt="Gallery" loading="lazy" />
                 </Link>
               </div>
             </div>
             <div class={styles.gallery_left}>
               <Link href={"/"}>
-                <Image src={GalleryOneImage} alt="Gallery" />
+                <Image src={GalleryOneImage} alt="Gallery" loading="lazy" />
               </Link>
             </div>
           </div>
@@ -364,7 +383,7 @@ const Home = () => {
           <div className={styles.boxes}>
             <div className={styles.box}>
               <div>
-                <Image src={BlogOneImage} alt="Blog" />
+                <Image src={BlogOneImage} alt="Blog" loading="lazy" />
               </div>
               <div className={styles.detail_blog}>
                 <h3>پودولوژی چیست؟</h3>
@@ -388,7 +407,7 @@ const Home = () => {
             </div>
             <div className={styles.box}>
               <div>
-                <Image src={BlogTwoImage} alt="Blog" />
+                <Image src={BlogTwoImage} alt="Blog" loading="lazy" />
               </div>
               <div className={styles.detail_blog}>
                 <h3>پیشگیری از ابتلا به قارچ ناخن</h3>
@@ -411,7 +430,7 @@ const Home = () => {
             </div>
             <div className={styles.box}>
               <div>
-                <Image src={BlogThreeImage} alt="Blog" />
+                <Image src={BlogThreeImage} alt="Blog" loading="lazy" />
               </div>
               <div className={styles.detail_blog}>
                 <h3>اونیکولیز ، جدا شدن ناخن از بستر </h3>
@@ -470,7 +489,11 @@ const Home = () => {
                 >
                   <div className={styles.swiper_slide_comments_top}>
                     <div className={styles.image_profile}>
-                      <Image src={CommentUserImage} alt="User Comments" />
+                      <Image
+                        src={CommentUserImage}
+                        alt="User Comments"
+                        loading="lazy"
+                      />
                       <div>
                         <h3>مریم موسوی</h3>
                         <span>درمان ناخن فرورفته</span>

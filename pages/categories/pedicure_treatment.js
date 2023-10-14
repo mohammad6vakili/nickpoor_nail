@@ -12,10 +12,34 @@ import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
 import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
 import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
 import OrtonixiaContentImageFour from "@/assets/images/ortonixia_content_4.png";
-const CustomerVideo = dynamic(() => import("@/components/customer_video"));
 
 const PedicureTreatment = () => {
-  const array = [1, 1, 1, 1, 1];
+  const array = [
+    {
+      id: 1,
+      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+    },
+    {
+      id: 2,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
+      id: 3,
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
+    },
+    {
+      id: 4,
+      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+    },
+    {
+      id: 5,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
+      id: 6,
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
+    },
+  ];
 
   return (
     <>
@@ -60,7 +84,11 @@ const PedicureTreatment = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={PedicureTreatmentBanner} alt="پدیکور درمانی" />
+          <Image
+            src={PedicureTreatmentBanner}
+            alt="پدیکور درمانی"
+            loading="lazy"
+          />
           <div className={styles.background_image_opacity}>
             <h1>پدیکور درمانی</h1>
           </div>
@@ -102,14 +130,22 @@ const PedicureTreatment = () => {
           </div>
           <div className={styles.section_ertonil_left}>
             <div>
-              <Image src={OrtonixiaContentImageOne} alt="پدیکور درمانی" />
+              <Image
+                src={OrtonixiaContentImageOne}
+                alt="پدیکور درمانی"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
         <section className={styles.section_ertonil_nails}>
           <div className={styles.ertonil_nails}>
             <div className={styles.ertonil_nails_right}>
-              <Image src={OrtonixiaContentImageTwo} alt="پدیکور درمانی" />
+              <Image
+                src={OrtonixiaContentImageTwo}
+                alt="پدیکور درمانی"
+                loading="lazy"
+              />
             </div>
             <div className={styles.ertonil_nails_left}>
               <div className={styles.ertonil_nails_left_title}>
@@ -189,13 +225,21 @@ const PedicureTreatment = () => {
             </ul>
           </div>
           <div className={styles.section_question_left}>
-            <Image src={OrtonixiaContentImageThree} alt="پدیکور درمانی" />
+            <Image
+              src={OrtonixiaContentImageThree}
+              alt="پدیکور درمانی"
+              loading="lazy"
+            />
             <DottedBackgroundIcon />
           </div>
         </section>
         <section className={styles.ertonil_advantage}>
           <div className={styles.ertonil_advantage_right}>
-            <Image src={OrtonixiaContentImageFour} alt="پدیکور درمانی" />
+            <Image
+              src={OrtonixiaContentImageFour}
+              alt="پدیکور درمانی"
+              loading="lazy"
+            />
             <CloudBackgroundIcon />
           </div>
           <div className={styles.ertonil_advantage_left}>
@@ -242,7 +286,9 @@ const PedicureTreatment = () => {
           >
             {array.map((item, index) => (
               <SwiperSlide key={index} className={styles.swiper_slide}>
-                <CustomerVideo />
+                <video width="100%" height="100%" controls>
+                  <source src={item.url} type="video/mp4" />
+                </video>
               </SwiperSlide>
             ))}
           </Swiper>

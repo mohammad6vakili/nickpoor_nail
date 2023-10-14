@@ -12,10 +12,34 @@ import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
 import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
 import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
 import OrtonixiaContentImageFour from "@/assets/images/ortonixia_content_4.png";
-const CustomerVideo = dynamic(() => import("@/components/customer_video"));
 
 const TreatmentOfCrackedFeet = () => {
-  const array = [1, 1, 1, 1, 1];
+  const array = [
+    {
+      id: 1,
+      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+    },
+    {
+      id: 2,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
+      id: 3,
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
+    },
+    {
+      id: 4,
+      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+    },
+    {
+      id: 5,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
+      id: 6,
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
+    },
+  ];
 
   return (
     <>
@@ -60,7 +84,11 @@ const TreatmentOfCrackedFeet = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={TreatmentOfCrackedFeetBanner} alt="درمان ترک پا" />
+          <Image
+            src={TreatmentOfCrackedFeetBanner}
+            alt="درمان ترک پا"
+            loading="lazy"
+          />
           <div className={styles.background_image_opacity}>
             <h1>درمان ترک پا</h1>
           </div>
@@ -115,13 +143,21 @@ const TreatmentOfCrackedFeet = () => {
           </div>
           <div className={styles.section_ertonil_left}>
             <div>
-              <Image src={OrtonixiaContentImageOne} alt="درمان ترک پا" />
+              <Image
+                src={OrtonixiaContentImageOne}
+                alt="درمان ترک پا"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
         <section className={styles.ertonil_advantage}>
           <div className={styles.ertonil_advantage_right}>
-            <Image src={OrtonixiaContentImageFour} alt="درمان ترک پا" />
+            <Image
+              src={OrtonixiaContentImageFour}
+              alt="درمان ترک پا"
+              loading="lazy"
+            />
             <CloudBackgroundIcon />
           </div>
           <div className={styles.ertonil_advantage_left}>
@@ -176,7 +212,9 @@ const TreatmentOfCrackedFeet = () => {
           >
             {array.map((item, index) => (
               <SwiperSlide key={index} className={styles.swiper_slide}>
-                <CustomerVideo />
+                <video width="100%" height="100%" controls>
+                  <source src={item.url} type="video/mp4" />
+                </video>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -79,7 +79,7 @@ const Header = ({ isScroll }) => {
       >
         <div className={styles.logo}>
           <Link href={"/"}>
-            <Image src={Logo} alt="Bahar Podology" />
+            <Image src={Logo} alt="Bahar Podology" loading="lazy" />
           </Link>
         </div>
         {/* navbar */}

@@ -58,7 +58,7 @@ const Blog = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={BlogBanner} alt="وبلاگ" />
+          <Image src={BlogBanner} alt="وبلاگ" loading="lazy" />
           <div className={styles.background_image_opacity}>
             <h1>وبلاگ</h1>
           </div>
@@ -69,7 +69,7 @@ const Blog = () => {
             <li>
               <article className={styles.article}>
                 <div>
-                  <Image src={BlogOneImage} alt="Article" />
+                  <Image src={BlogOneImage} alt="Article" loading="lazy" />
                 </div>
                 <div className={styles.detail_blog}>
                   <h3>پودولوژی چیست؟</h3>
@@ -96,7 +96,7 @@ const Blog = () => {
             <li>
               <article className={styles.article}>
                 <div>
-                  <Image src={BlogTwoImage} alt="Blog" />
+                  <Image src={BlogTwoImage} alt="Blog" loading="lazy" />
                 </div>
                 <div className={styles.detail_blog}>
                   <h3>پیشگیری از ابتلا به قارچ ناخن</h3>
@@ -122,7 +122,7 @@ const Blog = () => {
             <li>
               <article className={styles.article}>
                 <div>
-                  <Image src={BlogThreeImage} alt="Blog" />
+                  <Image src={BlogThreeImage} alt="Blog" loading="lazy" />
                 </div>
                 <div className={styles.detail_blog}>
                   <h3>اونیکولیز ، جدا شدن ناخن از بستر </h3>

@@ -51,7 +51,11 @@ const About = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={AboutBanner} alt="درباره کلینیک درمان ناخن" />
+          <Image
+            src={AboutBanner}
+            alt="درباره کلینیک درمان ناخن"
+            loading="lazy"
+          />
           <div className={styles.background_image_opacity}>
             <h1>درباره ما</h1>
           </div>
@@ -82,7 +86,11 @@ const About = () => {
           </div>
           <div className={styles.section_aboutUs_left}>
             <div>
-              <Image src={AboutOwnerImage} alt="درباره کلینیک درمان ناخن" />
+              <Image
+                src={AboutOwnerImage}
+                alt="درباره کلینیک درمان ناخن"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>

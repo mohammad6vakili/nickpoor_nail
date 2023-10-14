@@ -69,6 +69,7 @@ const Contact = () => {
             <Image
               src={ContactAvatar}
               alt="بهار پودولوژی اولین کلینیک درمان ناخن در قزوین"
+              loading="lazy"
             />
           </div>
           <div className={styles.background_image2_left}>

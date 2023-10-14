@@ -53,7 +53,7 @@ const WhatIsPodology = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={ContentImageOne} alt="پودولوژی چیست؟" />
+          <Image src={ContentImageOne} alt="پودولوژی چیست؟" loading="lazy" />
           <div className={styles.background_image_opacity}>
             <h1>پودولوژی چیست؟</h1>
           </div>
@@ -114,7 +114,11 @@ const WhatIsPodology = () => {
           </div>
           <div className={styles.section_podology_left}>
             <div>
-              <Image src={ContentImageTwo} alt="پودولوژی چیست؟" />
+              <Image
+                src={ContentImageTwo}
+                alt="پودولوژی چیست؟"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>

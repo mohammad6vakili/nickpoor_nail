@@ -60,7 +60,7 @@ const NotFoundPage = () => {
             </button>
           </div>
           <div>
-            <Image src={NotFoundVector} alt="Page Not Found" />
+            <Image src={NotFoundVector} alt="Page Not Found" loading="lazy" />
           </div>
         </div>
       </Layout>

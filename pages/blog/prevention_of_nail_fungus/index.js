@@ -60,7 +60,11 @@ const BurningTheRootOfTheNail = () => {
       </Head>
       <Layout>
         <section className={styles.background_image}>
-          <Image src={BannerImage} alt="پیشگیری از ابتلا به قارچ ناخن" />
+          <Image
+            src={BannerImage}
+            alt="پیشگیری از ابتلا به قارچ ناخن"
+            loading="lazy"
+          />
           <div className={styles.background_image_opacity}>
             <h1>پیشگیری از ابتلا به قارچ ناخن</h1>
           </div>
@@ -113,7 +117,11 @@ const BurningTheRootOfTheNail = () => {
           </div>
           <div className={styles.section_burningRootNail_left}>
             <div>
-              <Image src={ContentImageOne} alt="سوزاندن ریشه ناخن" />
+              <Image
+                src={ContentImageOne}
+                alt="پیشگیری از ابتلا به قارچ ناخن"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
@@ -123,6 +131,7 @@ const BurningTheRootOfTheNail = () => {
               <Image
                 src={ContentImageTwo}
                 alt="پیشگیری از ابتلا به قارچ ناخن"
+                loading="lazy"
               />
             </div>
             <div className={styles.image2}>
@@ -132,12 +141,14 @@ const BurningTheRootOfTheNail = () => {
                 style={{ marginBottom: 20 }}
                 src={ContentImageThree}
                 alt="پیشگیری از ابتلا به قارچ ناخن"
+                loading="lazy"
               />
               <Image
                 width={153.609}
                 height={111.743}
                 src={ContentImageFour}
                 alt="پیشگیری از ابتلا به قارچ ناخن"
+                loading="lazy"
               />
             </div>
           </div>
@@ -202,7 +213,11 @@ const BurningTheRootOfTheNail = () => {
             </div>
           </div>
           <div className={styles.section_question_left}>
-            <Image src={ContentImageFive} alt="پیشگیری از ابتلا به قارچ ناخن" />
+            <Image
+              src={ContentImageFive}
+              alt="پیشگیری از ابتلا به قارچ ناخن"
+              loading="lazy"
+            />
             <DottedBackgroundIcon />
           </div>
         </section>

@@ -96,7 +96,7 @@ const HamburgerMenu = ({ open, setOpen }) => {
       <div className={styles.hamburger_menu}>
         <div className={styles.hamburger_menu_header}>
           <Link onClick={() => setOpen(false)} href={"/"}>
-            <Image src={Logo} alt="بهار پودولوژی" />
+            <Image src={Logo} alt="بهار پودولوژی" loading="lazy" />
           </Link>
           <button type="button" onClick={() => setOpen(false)}>
             <AiOutlineClose />

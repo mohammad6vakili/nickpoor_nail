@@ -20,7 +20,7 @@ const Footer = () => {
       {/* footer_top */}
       <div className={styles.footer_top}>
         <div className={styles.logo}>
-          <Image src={Logo} alt="Bahar Podology" />
+          <Image src={Logo} alt="Bahar Podology" loading="lazy" />
         </div>
         <div>
           <Link href={CONFIG.WHATSAPP_NUMBER} target="_blank">

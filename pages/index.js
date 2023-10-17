@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "@/layout";
 import Head from "next/head";
 import Link from "next/link";
@@ -23,12 +23,13 @@ import CategroySliderFive from "@/assets/images/category_slider_5.png";
 import CommentUserImage from "@/assets/images/comment_user.png";
 import StarIcon from "@/assets/images/star";
 import { useRouter } from "next/router";
-import GalleryOneImage from "@/assets/gallery/1.jpg";
-import GalleryTwoImage from "@/assets/gallery/23.jpg";
 import GalleryThreeImage from "@/assets/gallery/14.jpg";
-import GalleryFourImage from "@/assets/gallery/13.jpg";
 import GalleryFiveImage from "@/assets/gallery/7.jpg";
 import GallerySixImage from "@/assets/gallery/4.jpg";
+import GalleryLeft from "@/assets/new_images/gallery_left.jpeg";
+import GalleryRightTop from "@/assets/new_images/gallery_right_top.jpg";
+import GalleryTopCenterLeft from "@/assets/new_images/gallery_top_center_left.jpg";
+import MobileBanner from "@/assets/images/blog_header.jpg";
 
 const Home = () => {
   const array = [1, 1, 1, 1, 1, 1, 1, 1];
@@ -89,26 +90,14 @@ const Home = () => {
             onSwiper={(swiper) => setTopSwiperRef(swiper)}
           >
             <SwiperSlide className={styles.top_swipper_slide}>
-              <Image
-                src={HomeSliderOne}
-                alt="Banner"
-                fill
-                objectFit={"cover"}
-                loading="lazy"
-              />
+              <Image src={HomeSliderOne} alt="Banner" fill loading="lazy" />
               <div className={styles.home_slider_one_content}>
                 <h1>درمان بیماریهای ناخن با ارتونیل</h1>
                 <span>بدون جراحی ، خونریزی ، تزریق و درد</span>
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.top_swipper_slide}>
-              <Image
-                src={HomeSliderTwo}
-                alt="Banner"
-                fill
-                objectFit={"cover"}
-                loading="lazy"
-              />
+              <Image src={HomeSliderTwo} alt="Banner" fill loading="lazy" />
               <div className={styles.home_slider_two_content}>
                 <h1>درمان بیماری های پا</h1>
                 <span>ترک عمیق ، زگیل ، میخچه و پینه</span>
@@ -328,7 +317,7 @@ const Home = () => {
                   <Image
                     width={100}
                     height={100}
-                    src={GalleryTwoImage}
+                    src={GalleryRightTop}
                     alt="Gallery"
                     loading="lazy"
                   />
@@ -354,7 +343,7 @@ const Home = () => {
                 <div>
                   <Link href={"/"}>
                     <Image
-                      src={GalleryFourImage}
+                      src={GalleryTopCenterLeft}
                       alt="Gallery"
                       loading="lazy"
                     />
@@ -369,7 +358,7 @@ const Home = () => {
             </div>
             <div class={styles.gallery_left}>
               <Link href={"/"}>
-                <Image src={GalleryOneImage} alt="Gallery" loading="lazy" />
+                <Image src={GalleryLeft} alt="Gallery" loading="lazy" />
               </Link>
             </div>
           </div>

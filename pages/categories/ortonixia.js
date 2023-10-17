@@ -6,30 +6,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import OrtonixiaImageOne from "@/assets/images/ortonixia.png";
+import OrtonixiaImageOne from "@/assets/new_images/ortonixia_pages_background.jpg";
 import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
 import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
-import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
+import OrtonixiaContentImageThree from "@/assets/new_images/ortonixia_3.jpg";
 import OrtonixiaContentImageFour from "@/assets/images/ortonixia_content_4.png";
 
 const Ortonixia = () => {
   const array = [
     {
       id: 1,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
-    },
-    {
-      id: 2,
       url: "https://baharpod.storage.iran.liara.space/2.mp4",
     },
     {
-      id: 3,
+      id: 2,
       url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
+      id: 3,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
       id: 4,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
       id: 5,
@@ -232,6 +231,7 @@ const Ortonixia = () => {
               src={OrtonixiaContentImageThree}
               alt="ارتونیل یاارتودنسی ناخن"
               loading="lazy"
+              style={{ objectFit: "cover" }}
             />
             <DottedBackgroundIcon />
           </div>

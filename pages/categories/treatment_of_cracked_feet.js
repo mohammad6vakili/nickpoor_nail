@@ -8,28 +8,26 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import TreatmentOfCrackedFeetBanner from "@/assets/images/treatment_of_cracked_feet_banner.png";
-import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
-import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
-import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
-import OrtonixiaContentImageFour from "@/assets/images/ortonixia_content_4.png";
+import OrtonixiaContentImageOne from "@/assets/new_images/treatment_of_cracked_feet_1.jpg";
+import OrtonixiaContentImageFour from "@/assets/new_images/treatment_of_cracked_feet_2.jpg";
 
 const TreatmentOfCrackedFeet = () => {
   const array = [
     {
       id: 1,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
-    },
-    {
-      id: 2,
       url: "https://baharpod.storage.iran.liara.space/2.mp4",
     },
     {
-      id: 3,
+      id: 2,
       url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
+      id: 3,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
       id: 4,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
       id: 5,

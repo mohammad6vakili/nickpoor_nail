@@ -5,31 +5,30 @@ import DottedBackgroundIcon from "@/assets/icons/dotted_background";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 import NailDiggingIntoTheFleshBanner from "@/assets/images/nail_digging_into_the_flesh_banner.png";
-import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
-import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
-import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
-import OrtonixiaContentImageFour from "@/assets/images/ortonixia_content_4.png";
+import OrtonixiaContentImageOne from "@/assets/new_images/nail_digging_into_the_flesh_1.jpg";
+import OrtonixiaContentImageTwo from "@/assets/new_images/nail_digging_into_the_flesh_2.jpg";
+import OrtonixiaContentImageThree from "@/assets/new_images/nail_digging_into_the_flesh_3.jpg";
+import OrtonixiaContentImageFour from "@/assets/new_images/nail_digging_into_the_flesh_4.jpg";
 
 const NailDiggingIntoTheFlesh = () => {
   const array = [
     {
       id: 1,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
-    },
-    {
-      id: 2,
       url: "https://baharpod.storage.iran.liara.space/2.mp4",
     },
     {
-      id: 3,
+      id: 2,
       url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
+      id: 3,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
       id: 4,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
       id: 5,
@@ -145,6 +144,7 @@ const NailDiggingIntoTheFlesh = () => {
                 src={OrtonixiaContentImageTwo}
                 alt="درمان فرو رفتن ناخن در گوشت"
                 loading="lazy"
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className={styles.ertonil_nails_left}>
@@ -225,6 +225,7 @@ const NailDiggingIntoTheFlesh = () => {
               src={OrtonixiaContentImageFour}
               alt="درمان فرو رفتن ناخن در گوشت"
               loading="lazy"
+              style={{ objectFit: "cover" }}
             />
             <CloudBackgroundIcon />
           </div>

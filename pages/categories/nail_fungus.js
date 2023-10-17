@@ -5,29 +5,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import NailFungusBanner from "@/assets/images/nail_fungus_banner.png";
-import OrtonixiaContentImageOne from "@/assets/images/ortonixia_content_1.png";
-import OrtonixiaContentImageTwo from "@/assets/images/ortonixia_content_2.png";
-import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
+import OrtonixiaContentImageOne from "@/assets/new_images/nail_fungus_1.jpg";
+import OrtonixiaContentImageTwo from "@/assets/new_images/nail_fungus_2.jpg";
+import OrtonixiaContentImageThree from "@/assets/new_images/nail_fungus_3.jpg";
 
 const NailFungus = () => {
   const array = [
     {
       id: 1,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
-    },
-    {
-      id: 2,
       url: "https://baharpod.storage.iran.liara.space/2.mp4",
     },
     {
-      id: 3,
+      id: 2,
       url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
+      id: 3,
+      url: "https://baharpod.storage.iran.liara.space/2.mp4",
+    },
+    {
       id: 4,
-      url: "https://baharpod.storage.iran.liara.space/1.mp4",
+      url: "https://baharpod.storage.iran.liara.space/3.mp4",
     },
     {
       id: 5,
@@ -137,6 +136,7 @@ const NailFungus = () => {
                 src={OrtonixiaContentImageOne}
                 alt="درمان قارچ ناخن پا"
                 loading="lazy"
+                style={{ objectFit: "cover" }}
               />
             </div>
           </div>
@@ -148,6 +148,7 @@ const NailFungus = () => {
                 src={OrtonixiaContentImageTwo}
                 alt="درمان قارچ ناخن پا"
                 loading="lazy"
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className={styles.ertonil_nails_left}>
@@ -230,6 +231,7 @@ const NailFungus = () => {
               src={OrtonixiaContentImageThree}
               alt="درمان قارچ ناخن پا"
               loading="lazy"
+              style={{ objectFit: "cover" }}
             />
             <DottedBackgroundIcon />
           </div>

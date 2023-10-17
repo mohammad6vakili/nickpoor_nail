@@ -192,7 +192,7 @@
 }
 
 .podology_line {
-  width: 130px;
+  width: 85px;
   height: 6px;
   background: linear-gradient(
     270deg,
@@ -391,7 +391,7 @@
 }
 
 .onycholysis_line {
-  width: 180px;
+  width: 80px;
   height: 6px;
   background: linear-gradient(
     270deg,

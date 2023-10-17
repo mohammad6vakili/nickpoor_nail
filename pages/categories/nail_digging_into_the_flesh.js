@@ -100,7 +100,7 @@ const NailDiggingIntoTheFlesh = () => {
             <div className={styles.ertonil}>
               <div className={styles.ertonil_title}>
                 <h1>فرو رفتن ناخن در گوشت</h1>
-                <div className={styles.ertonil_line}></div>
+                <div className={styles.line_x_1}></div>
               </div>
               <div className={styles.ertonil_description}>
                 <p>

@@ -96,7 +96,7 @@ const TreatmentOfCrackedFeet = () => {
             <div className={styles.ertonil}>
               <div className={styles.ertonil_title}>
                 <h1>درمان ترک پا</h1>
-                <div className={styles.ertonil_line}></div>
+                <div className={styles.line_x_4}></div>
               </div>
               <div className={styles.ertonil_description}>
                 <p>

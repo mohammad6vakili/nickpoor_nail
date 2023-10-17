@@ -95,7 +95,7 @@ const NailFungus = () => {
             <div className={styles.ertonil}>
               <div className={styles.ertonil_title}>
                 <h1>درمان قارچ ناخن پا</h1>
-                <div className={styles.ertonil_line}></div>
+                <div className={styles.line_x_2}></div>
               </div>
               <div className={styles.ertonil_description}>
                 <p>

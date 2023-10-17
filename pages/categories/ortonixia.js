@@ -100,7 +100,7 @@ const Ortonixia = () => {
             <div className={styles.ertonil}>
               <div className={styles.ertonil_title}>
                 <h1>ارتونیل</h1>
-                <div className={styles.ertonil_line}></div>
+                <div className={styles.line_x_3}></div>
               </div>
               <div className={styles.ertonil_description}>
                 <p>

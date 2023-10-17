@@ -126,7 +126,7 @@
 }
 /* line */
 .line {
-  width: 170px;
+  width: 130px;
   height: 6px;
   background: linear-gradient(
     270deg,
@@ -245,7 +245,7 @@
 }
 /* line1 */
 .line1 {
-  width: 270px;
+  width: 260px;
   height: 6px;
   background: linear-gradient(
     270deg,
@@ -374,7 +374,7 @@
 }
 /* line2 */
 .line2 {
-  width: 110px;
+  width: 120px;
   height: 6px;
   background: linear-gradient(
     270deg,

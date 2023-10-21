@@ -29,7 +29,7 @@ import GallerySixImage from "@/assets/gallery/4.jpg";
 import GalleryLeft from "@/assets/new_images/gallery_left.jpeg";
 import GalleryRightTop from "@/assets/new_images/gallery_right_top.jpg";
 import GalleryTopCenterLeft from "@/assets/new_images/gallery_top_center_left.jpg";
-import MobileBanner from "@/assets/images/blog_header.jpg";
+import { CommentsData } from "@/data/comments";
 
 const Home = () => {
   const array = [1, 1, 1, 1, 1, 1, 1, 1];
@@ -471,7 +471,7 @@ const Home = () => {
                 },
               }}
             >
-              {array.map((item, index) => (
+              {CommentsData.map((cm, index) => (
                 <SwiperSlide
                   key={index}
                   className={styles.swiper_slide_comments}
@@ -479,13 +479,13 @@ const Home = () => {
                   <div className={styles.swiper_slide_comments_top}>
                     <div className={styles.image_profile}>
                       <Image
-                        src={CommentUserImage}
+                        src={cm.avatar}
                         alt="User Comments"
                         loading="lazy"
                       />
                       <div>
-                        <h3>مریم موسوی</h3>
-                        <span>درمان ناخن فرورفته</span>
+                        <h3>{cm.name}</h3>
+                        <span>{cm.category}</span>
                       </div>
                     </div>
                     <div className={styles.star}>
@@ -493,10 +493,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className={styles.swiper_slide_comments_bottom}>
-                    <span>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان بلکه روزنامه و مجله می باشد.
-                    </span>
+                    <span>{cm.comment}</span>
                   </div>
                 </SwiperSlide>
               ))}

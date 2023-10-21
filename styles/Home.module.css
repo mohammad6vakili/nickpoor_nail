@@ -720,6 +720,9 @@
 }
 .image_profile > img {
   margin-left: 10px;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
 }
 .image_profile > div {
   display: flex;

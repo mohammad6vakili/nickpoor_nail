@@ -703,14 +703,34 @@
 }
 .Complications_burning_right {
   display: flex;
-  width: 49%;
   align-items: center;
+  width: 49%;
 }
 .Complications_burning_left {
   display: flex;
   width: 49%;
   flex-direction: column;
   margin-top: 40px;
+}
+.Complications_burning_right > div:nth-child(1) {
+  height: 268px;
+}
+.Complications_burning_right > div:nth-child(1) > img {
+  height: 100% !important;
+  border-radius: 8px;
+  object-fit: cover !important;
+}
+.Complications_burning_right > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  height: 268px;
+  justify-content: space-between;
+}
+.Complications_burning_right > div:nth-child(2) > img {
+  height: calc(50% - 4px) !important;
+  border-radius: 8px;
+  object-fit: cover !important;
 }
 
 .Complications_burning_Frame {
@@ -851,17 +871,17 @@
     align-items: center;
   }
   .Complications_burning_right > div:nth-child(1) {
-    width: 34%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
   }
   .Complications_burning_right > div:nth-child(1) > img {
     width: 250px;
     height: 250px;
   }
   .Complications_burning_right > div:nth-child(2) {
-    width: 66%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
   }
   .Complications_burning_right > div:nth-child(2) > img {
     width: 250px !important;

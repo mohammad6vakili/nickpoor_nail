@@ -138,7 +138,6 @@ const BurningTheRootOfTheNail = () => {
               <Image
                 width={154}
                 height={175}
-                style={{ marginBottom: 20 }}
                 src={ContentImageThree}
                 alt="پیشگیری از ابتلا به قارچ ناخن"
                 loading="lazy"

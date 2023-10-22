@@ -116,7 +116,10 @@ const TreatmentOfCrackedFeet = () => {
                     <h2>دلایل ترک پا</h2>
                   </div>
                 </div>
-                <ul className={styles.prescription_description}>
+                <ul
+                  className={styles.prescription_description}
+                  style={{ paddingRight: 12 }}
+                >
                   <li>
                     خشک شدن پوست: خشک شدن پوست یکی از دلایل اصلی ترک پا است.
                     پوست پا به طور طبیعی خشک تر از سایر قسمت های بدن است و اگر
@@ -164,7 +167,10 @@ const TreatmentOfCrackedFeet = () => {
                 <h2>درمان هایی برای ترک پا</h2>
               </div>
             </div>
-            <ul className={styles.taking_care_description}>
+            <ul
+              className={styles.taking_care_description}
+              style={{ paddingRight: 12 }}
+            >
               <li>
                 مرطوب نگه داشتن پاها: یکی از مهم ترین راه های درمان ترک پا،
                 مرطوب نگه داشتن آن است. از مرطوب کننده های بدون عطر و الکل

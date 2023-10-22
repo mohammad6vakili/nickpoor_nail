@@ -6,9 +6,9 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Head from "next/head";
 import NailFungusBanner from "@/assets/images/nail_fungus_banner.png";
-import OrtonixiaContentImageOne from "@/assets/new_images/nail_fungus_1.jpg";
+import OrtonixiaContentImageOne from "@/assets/new_images/nail_fungus_1.png";
 import OrtonixiaContentImageTwo from "@/assets/new_images/nail_fungus_2.jpg";
-import OrtonixiaContentImageThree from "@/assets/new_images/nail_fungus_3.jpg";
+import OrtonixiaContentImageThree from "@/assets/new_images/nail_fungus_3.png";
 
 const NailFungus = () => {
   const array = [

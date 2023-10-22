@@ -118,7 +118,10 @@ const NailDiggingIntoTheFlesh = () => {
                     <h2>علائم فرورفتن ناخن در گوشت عبارتند از:</h2>
                   </div>
                 </div>
-                <ul className={styles.prescription_description}>
+                <ul
+                  className={styles.prescription_description}
+                  style={{ paddingRight: 12 }}
+                >
                   <li>درد، قرمزی و تورم در اطراف ناخن</li>
                   <li>ترشح چرکی از اطراف ناخن</li>
                   <li>حساسیت به لمس</li>

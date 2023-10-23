@@ -258,7 +258,7 @@ const Onycholysis = () => {
                   <div className={styles.dot1}></div>
                 </div>
                 <div>
-                  <h2>فعالیت بیش از حد </h2>
+                  <h2>فعالیت بیش از حد تیروئید</h2>
                 </div>
               </div>
               <div className={styles.Agents_top_right_description}>

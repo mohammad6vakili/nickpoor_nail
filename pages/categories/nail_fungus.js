@@ -118,7 +118,7 @@ const NailFungus = () => {
                   </div>
                 </div>
                 <div className={styles.prescription_description}>
-                  <p>
+                  <p style={{ color: "#555" }}>
                     قارچ ناخن یک عفونت شایع است که میتواند ناخنهای پا یا دست را
                     درگیر کند. این عفونت میتواند باعث تغییر رنگ، ضخیم شدن،
                     شکنندگی و جدا شدن ناخن شود. <br />

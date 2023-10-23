@@ -261,6 +261,7 @@
 }
 .question_description_list li {
   margin-bottom: 10px;
+  color: #555;
 }
 .question_description > p {
   color: #555;

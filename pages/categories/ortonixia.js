@@ -119,7 +119,10 @@ const Ortonixia = () => {
                     <h2>ارتونیل برای چه افرادی تجویز می‌شود؟</h2>
                   </div>
                 </div>
-                <div className={styles.prescription_description}>
+                <div
+                  style={{ color: "#555" }}
+                  className={styles.prescription_description}
+                >
                   <p>
                     برای افرادی که به دلایل ارثی، پوشیدن کفش و جوراب نامناسب
                     ناخن درگوشت فرو رفته و حالت لوله‌ای پیدا می‌کند.علاوه براین
@@ -271,7 +274,10 @@ const Ortonixia = () => {
                 <h2>آیا برای ارتونیل بی حسی استفاده می شود؟</h2>
               </div>
             </div>
-            <div className={styles.taking_care_description}>
+            <div
+              style={{ color: "#555" }}
+              className={styles.taking_care_description}
+            >
               <p>
                 درهنگام ارتونیل نیاز به هیچ سرکننده و یا بی حسی موضعی نمیباشد.
               </p>

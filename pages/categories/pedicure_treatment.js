@@ -118,7 +118,7 @@ const PedicureTreatment = () => {
                   </div>
                 </div>
                 <div className={styles.prescription_description}>
-                  <p>
+                  <p style={{ color: "#555" }}>
                     بیمارانی که پاهایشان تحت تاثیر ترک پاشنه، زگیل، پینه، میخچه
                     و ناخن های ضخیم و قارچی و شاخی شکل می‌باشد، نیاز به پدیکور
                     درمانی دارند.
@@ -250,7 +250,7 @@ const PedicureTreatment = () => {
               </div>
             </div>
             <div className={styles.taking_care_description}>
-              <p>
+              <p style={{ color: "#555" }}>
                 نتایج درمان نه تنها به مهارت پودولوژیست بلکه به مراقبت های خود
                 بیمار هم بستگی دارد. پودولوژیست در ابتدا وضعیت پای شما را
                 می‌بیند سپس روش درمانی مناسب را انتخاب می‌کند.
@@ -263,7 +263,7 @@ const PedicureTreatment = () => {
               </div>
             </div>
             <div className={styles.taking_care_description}>
-              <p>
+              <p style={{ color: "#555" }}>
                 این کرم های احیا کننده با توجه به نوع پوست و عارضه های هر فرد
                 انتخاب می‌شود و مصرف خود سرانه و انتخاب اشتباه آن‌ها باعث آسیب و
                 تشدید بیماری های پوستی می‌گردد.

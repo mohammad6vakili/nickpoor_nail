@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Layout from "@/layout";
 import Head from "next/head";
 import Link from "next/link";
@@ -11,8 +11,6 @@ import MoreArrowIcon from "@/assets/icons/more_arrow";
 import BlogOneImage from "@/assets/images/blog1.png";
 import BlogTwoImage from "@/assets/images/blog2.png";
 import BlogThreeImage from "@/assets/images/blog3.png";
-import HomeSliderOne from "@/assets/images/home_slider_1.png";
-import HomeSliderTwo from "@/assets/images/home_slider_2.png";
 import SwiperNextIcon from "@/assets/icons/swiper_next";
 import SwiperPrevIcon from "@/assets/icons/swiper_prev";
 import CategroySliderOne from "@/assets/images/category_slider_1.png";
@@ -20,11 +18,10 @@ import CategroySliderTwo from "@/assets/images/category_slider_2.png";
 import CategroySliderThree from "@/assets/images/category_slider_3.png";
 import CategroySliderFour from "@/assets/images/category_slider_4.png";
 import CategroySliderFive from "@/assets/images/category_slider_5.png";
-import CommentUserImage from "@/assets/images/comment_user.png";
 import StarIcon from "@/assets/images/star";
 import { useRouter } from "next/router";
 import GalleryThreeImage from "@/assets/gallery/14.jpg";
-import GalleryFiveImage from "@/assets/gallery/7.jpg";
+import GalleryFiveImage from "@/assets/new_images/gallery_bottom_center.png";
 import GallerySixImage from "@/assets/gallery/4.jpg";
 import GalleryLeft from "@/assets/new_images/gallery_left.jpeg";
 import GalleryRightTop from "@/assets/new_images/gallery_right_top.jpg";
@@ -85,19 +82,25 @@ const Home = () => {
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={0}
-            autoplay={true}
+            // autoplay={true}
             slidesPerView={1}
             onSwiper={(swiper) => setTopSwiperRef(swiper)}
           >
-            <SwiperSlide className={styles.top_swipper_slide}>
-              <Image src={HomeSliderOne} alt="Banner" fill loading="lazy" />
+            <SwiperSlide
+              className={styles.top_swipper_slide}
+              id={styles.top_swipper_one}
+            >
+              <div></div>
               <div className={styles.home_slider_one_content}>
                 <h1>درمان بیماریهای ناخن با ارتونیل</h1>
                 <span>بدون جراحی ، خونریزی ، تزریق و درد</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide className={styles.top_swipper_slide}>
-              <Image src={HomeSliderTwo} alt="Banner" fill loading="lazy" />
+            <SwiperSlide
+              className={styles.top_swipper_slide}
+              id={styles.top_swipper_two}
+            >
+              <div></div>
               <div className={styles.home_slider_two_content}>
                 <h1>درمان بیماری های پا</h1>
                 <span>ترک عمیق ، زگیل ، میخچه و پینه</span>

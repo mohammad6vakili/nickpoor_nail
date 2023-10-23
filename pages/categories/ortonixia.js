@@ -254,7 +254,10 @@ const Ortonixia = () => {
                 <h2>مزایای ارتونیل نسبت به روش های دیگر :</h2>
               </div>
             </div>
-            <ul className={styles.taking_care_description}>
+            <ul
+              style={{ paddingRight: 12 }}
+              className={styles.taking_care_description}
+            >
               <li>
                 غیرتهاجمی است .در این روش، هیچ بافتی از بدن برداشته نمی شود.
               </li>

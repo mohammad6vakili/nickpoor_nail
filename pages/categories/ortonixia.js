@@ -24,19 +24,7 @@ const Ortonixia = () => {
     },
     {
       id: 3,
-      url: "https://baharpod.storage.iran.liara.space/2.mp4",
-    },
-    {
-      id: 4,
-      url: "https://baharpod.storage.iran.liara.space/3.mp4",
-    },
-    {
-      id: 5,
-      url: "https://baharpod.storage.iran.liara.space/2.mp4",
-    },
-    {
-      id: 6,
-      url: "https://baharpod.storage.iran.liara.space/3.mp4",
+      url: "https://baharpod.storage.iran.liara.space/4.MP4",
     },
   ];
 

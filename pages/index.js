@@ -3,7 +3,7 @@ import Layout from "@/layout";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "@/styles/home.module.css";
+import styles from "@/styles/Home.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import HomeSectionOneImage from "@/assets/images/home_section_one_image.png";

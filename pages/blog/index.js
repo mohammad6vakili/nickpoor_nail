@@ -8,6 +8,7 @@ import BlogOneImage from "@/assets/images/blog1.png";
 import BlogTwoImage from "@/assets/images/blog2.png";
 import BlogThreeImage from "@/assets/images/blog3.png";
 import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
+import OitmentForIngrownNail from "@/assets/images/oitment-for-ingrown-nail.jpg";
 import Link from "next/link";
 
 const Blog = () => {
@@ -168,6 +169,37 @@ const Blog = () => {
                 <div className={styles.blog_btn}>
                   <button>
                     <Link href={"/blog/ortonixia"}>
+                      <div>
+                        <span>ادامه مطلب</span>
+                        <MoreArrowIcon />
+                      </div>
+                    </Link>
+                  </button>
+                </div>
+              </article>
+            </li>
+            {/* article */}
+            <li>
+              <article className={styles.article}>
+                <div>
+                  <Image
+                    src={OitmentForIngrownNail}
+                    alt="Blog"
+                    loading="lazy"
+                  />
+                </div>
+                <div className={styles.detail_blog}>
+                  <h3>پماد برای ناخن فرورفته در گوشت</h3>
+                  <span>
+                    ناخن فرورفته در گوشت (Ingrown Toenail) یک مشکل شایع و دردناک
+                    است که اغلب در ناخن‌های پا رخ می‌دهد. این وضعیت زمانی پیش
+                    می‌آید که گوشه یا لبه ناخن به داخل پوست فرو می‌رود و باعث
+                    ...
+                  </span>
+                </div>
+                <div className={styles.blog_btn}>
+                  <button>
+                    <Link href={"/blog/ointment_for_nail"}>
                       <div>
                         <span>ادامه مطلب</span>
                         <MoreArrowIcon />

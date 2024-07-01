@@ -7,6 +7,7 @@ import BlogBanner from "@/assets/images/blog_header.jpg";
 import BlogOneImage from "@/assets/images/blog1.png";
 import BlogTwoImage from "@/assets/images/blog2.png";
 import BlogThreeImage from "@/assets/images/blog3.png";
+import OrtonixiaContentImageThree from "@/assets/images/ortonixia_content_3.png";
 import Link from "next/link";
 
 const Blog = () => {
@@ -136,6 +137,37 @@ const Blog = () => {
                 <div className={styles.blog_btn}>
                   <button>
                     <Link href={"/blog/onycholysis"}>
+                      <div>
+                        <span>ادامه مطلب</span>
+                        <MoreArrowIcon />
+                      </div>
+                    </Link>
+                  </button>
+                </div>
+              </article>
+            </li>
+            {/* article */}
+            <li>
+              <article className={styles.article}>
+                <div>
+                  <Image
+                    src={OrtonixiaContentImageThree}
+                    alt="Blog"
+                    loading="lazy"
+                  />
+                </div>
+                <div className={styles.detail_blog}>
+                  <h3>ارتونیل (ارتودنسی ناخن)</h3>
+                  <span>
+                    یک روش غیرجراحی برای درمان ناخن فرورفته در گوشت است. این روش
+                    شامل استفاده از سیم های مخصوصی است که بر روی صفحه ناخن نصب
+                    می شوند. این سیم ها ناخن را از کناره ها بلند کرده و از رشد
+                    ...
+                  </span>
+                </div>
+                <div className={styles.blog_btn}>
+                  <button>
+                    <Link href={"/blog/ortonixia"}>
                       <div>
                         <span>ادامه مطلب</span>
                         <MoreArrowIcon />

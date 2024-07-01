@@ -20,7 +20,7 @@ import CategroySliderFour from "@/assets/images/category_slider_4.png";
 import CategroySliderFive from "@/assets/images/category_slider_5.png";
 import StarIcon from "@/assets/images/star";
 import { useRouter } from "next/router";
-import GalleryThreeImage from "@/assets/gallery/14.jpg";
+import GalleryThreeImage from "@/assets/gallery/14.png";
 import GalleryFiveImage from "@/assets/new_images/gallery_bottom_center.png";
 import GallerySixImage from "@/assets/gallery/4.jpg";
 import GalleryLeft from "@/assets/new_images/gallery_left.jpeg";
@@ -28,8 +28,6 @@ import GalleryRightTop from "@/assets/new_images/gallery_right_top.jpg";
 import GalleryTopCenterLeft from "@/assets/new_images/gallery_top_center_left.jpg";
 import { CommentsData } from "@/data/comments";
 import ContentImageOne from "@/assets/images/onycholysis_content_1.png";
-import ContentImageTwo from "@/assets/images/onycholysis_content_2.png";
-import ContentImageThree from "@/assets/images/onycholysis_content_3.png";
 
 const Home = () => {
   const router = useRouter();
@@ -96,16 +94,6 @@ const Home = () => {
               <div className={styles.home_slider_one_content}>
                 <h1>درمان بیماریهای ناخن با ارتونیل</h1>
                 <span>بدون جراحی ، خونریزی ، تزریق و درد</span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              className={styles.top_swipper_slide}
-              id={styles.top_swipper_two}
-            >
-              <div></div>
-              <div className={styles.home_slider_two_content}>
-                <h1>درمان بیماری های پا</h1>
-                <span>ترک عمیق ، زگیل ، میخچه و پینه</span>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -364,6 +352,7 @@ const Home = () => {
                       alt="Gallery"
                       loading="lazy"
                     />
+                    {/* here */}
                   </Link>
                 </div>
                 <div>
@@ -481,17 +470,14 @@ const Home = () => {
               slidesPerView={3}
               breakpoints={{
                 300: {
-                  width: 300,
                   slidesPerView: 1,
                   spaceBetween: 10,
                 },
                 568: {
-                  width: 350,
                   slidesPerView: 2,
                   spaceBetween: 40,
                 },
                 970: {
-                  width: 350,
                   slidesPerView: 3,
                   spaceBetween: 40,
                 },

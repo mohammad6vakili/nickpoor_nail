@@ -27,9 +27,11 @@ import GalleryLeft from "@/assets/new_images/gallery_left.jpeg";
 import GalleryRightTop from "@/assets/new_images/gallery_right_top.jpg";
 import GalleryTopCenterLeft from "@/assets/new_images/gallery_top_center_left.jpg";
 import { CommentsData } from "@/data/comments";
+import ContentImageOne from "@/assets/images/onycholysis_content_1.png";
+import ContentImageTwo from "@/assets/images/onycholysis_content_2.png";
+import ContentImageThree from "@/assets/images/onycholysis_content_3.png";
 
 const Home = () => {
-  const array = [1, 1, 1, 1, 1, 1, 1, 1];
   const router = useRouter();
   const [topSwiperRef, setTopSwiperRef] = useState();
 
@@ -166,22 +168,43 @@ const Home = () => {
           <Swiper
             breakpoints={{
               300: {
-                width: 300,
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
               568: {
-                width: 350,
                 slidesPerView: 2,
                 spaceBetween: 40,
               },
               970: {
-                width: 350,
                 slidesPerView: 3,
                 spaceBetween: 40,
               },
             }}
           >
+            <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
+              <div>
+                <Image src={ContentImageOne} alt="Category" loading="lazy" />
+              </div>
+              <div className={styles.detail}>
+                <h3>اونیکولیز (جدا شدن ناخن از بستر)</h3>
+                <span>
+                  اونیکولیز وضعیتی است که در آن ناخن از پوست زیر آن جدا می شود.
+                  این می تواند در اثر عوامل مختلفی مانند ضربه، عفونت ...
+                </span>
+              </div>
+              <div className={styles.swiper_slide_btn}>
+                <button
+                  onClick={() => {
+                    router.push("/categories/onycholysis");
+                  }}
+                >
+                  <div>
+                    <span>بیشتر بدانید</span>
+                    <MoreArrowIcon />
+                  </div>
+                </button>
+              </div>
+            </SwiperSlide>
             <SwiperSlide className={styles.categories_swiper_slide_with_btn}>
               <div>
                 <Image src={CategroySliderOne} alt="Category" loading="lazy" />

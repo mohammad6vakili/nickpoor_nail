@@ -3,7 +3,6 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import WhatsappIcon from "@/assets/icons/whatsapp";
 import InstagramIcon from "@/assets/icons/instagram";
-import TelegramIcon from "@/assets/icons/telegram";
 import GpsIcon from "@/assets/icons/gps";
 import PhoneIcon from "@/assets/icons/phone";
 import ClockIcon from "@/assets/icons/clock";
@@ -19,6 +18,11 @@ const Header = ({ isScroll }) => {
   const [open, setOpen] = useState(false);
   const categoriesPopover = (
     <ul className={styles.categories_popover}>
+      <li>
+        <Link href={"/categories/onycholysis"}>
+          اونیکولیز (جدا شدن ناخن از بستر)
+        </Link>
+      </li>
       <li>
         <Link href={"/categories/ortonixia"}>ارتونیل (ارتودنسی ناخن)</Link>
       </li>

@@ -33,20 +33,21 @@ const HamburgerMenu = ({ open, setOpen }) => {
       "sub1",
       <RxDashboard style={{ fontSize: 20 }} />,
       [
-        getItem("ارتونیل (ارتودنسی ناخن)", "2"),
-        getItem("درمان فرو رفتن ناخن در گوشت", "3"),
-        getItem("درمان قارچ ناخن", "4"),
-        getItem("پدیکور درمانی", "5"),
-        getItem("درمان ترک پا", "6"),
+        getItem("اونیکولیز (جدا شدن ناخن از بستر)", "2"),
+        getItem("ارتونیل (ارتودنسی ناخن)", "3"),
+        getItem("درمان فرو رفتن ناخن در گوشت", "4"),
+        getItem("درمان قارچ ناخن", "5"),
+        getItem("پدیکور درمانی", "6"),
+        getItem("درمان ترک پا", "7"),
       ]
     ),
-    getItem("وبلاگ", "7", <PiBooksLight style={{ fontSize: 20 }} />),
+    getItem("وبلاگ", "8", <PiBooksLight style={{ fontSize: 20 }} />),
     getItem(
       "درباره ما",
-      "8",
+      "9",
       <IoIosInformationCircleOutline style={{ fontSize: 20 }} />
     ),
-    getItem("تماس با ما", "9", <BsTelephone style={{ fontSize: 20 }} />),
+    getItem("تماس با ما", "10", <BsTelephone style={{ fontSize: 20 }} />),
   ];
 
   const handleSelectMenuItem = (e) => {
@@ -55,27 +56,30 @@ const HamburgerMenu = ({ open, setOpen }) => {
         router.push("/");
         break;
       case "2":
-        router.push("/categories/ortonixia");
+        router.push("/categories/onycholysis");
         break;
       case "3":
-        router.push("/categories/nail_digging_into_the_flesh");
+        router.push("/categories/ortonixia");
         break;
       case "4":
-        router.push("/categories/nail_fungus");
+        router.push("/categories/nail_digging_into_the_flesh");
         break;
       case "5":
-        router.push("/categories/pedicure_treatment");
+        router.push("/categories/nail_fungus");
         break;
       case "6":
-        router.push("/categories/treatment_of_cracked_feet");
+        router.push("/categories/pedicure_treatment");
         break;
       case "7":
-        router.push("/blog");
+        router.push("/categories/treatment_of_cracked_feet");
         break;
       case "8":
-        router.push("/about");
+        router.push("/blog");
         break;
       case "9":
+        router.push("/about");
+        break;
+      case "10":
         router.push("/contact");
         break;
       default:

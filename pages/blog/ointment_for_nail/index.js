@@ -106,7 +106,11 @@ const OintmentForNail = () => {
           </div>
           <div className={styles.section_burningRootNail_left}>
             <div>
-              <Image src={Azols} alt="اونیکولیز" loading="lazy" />
+              <Image
+                src={Azols}
+                alt="پماد برای ناخن فرورفته در گوشت"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>

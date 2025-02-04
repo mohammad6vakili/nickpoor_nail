@@ -217,17 +217,16 @@ const Blog = () => {
                   <Image src={ContentImageOne} alt="Blog" loading="lazy" />
                 </div>
                 <div className={styles.detail_blog}>
-                  <h3>پماد برای ناخن فرورفته در گوشت</h3>
+                  <h3>برای درمان قارچ ناخن به چه پزشکی مراجعه کنیم؟</h3>
                   <span>
-                    ناخن فرورفته در گوشت (Ingrown Toenail) یک مشکل شایع و دردناک
-                    است که اغلب در ناخن‌های پا رخ می‌دهد. این وضعیت زمانی پیش
-                    می‌آید که گوشه یا لبه ناخن به داخل پوست فرو می‌رود و باعث
-                    ...
+                    متخصص با برداشتن بافت آلوده از ناخن که تغییر رنگ داده یا از
+                    بستر جدا شده کمک زیادی به روند بهبودی و تاثیرپذیری داروهای
+                    تجویز شده در آن ناحیه می‌کند. برداشتن بافت ...
                   </span>
                 </div>
                 <div className={styles.blog_btn}>
                   <button>
-                    <Link href={"/blog/ointment_for_nail"}>
+                    <Link href={"/blog/nail_fungus_dr"}>
                       <div>
                         <span>ادامه مطلب</span>
                         <MoreArrowIcon />

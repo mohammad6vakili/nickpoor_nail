@@ -3,7 +3,6 @@ import Logo from "@/assets/images/logo.svg";
 import Image from "next/image";
 import WhatsappFooterIcon from "@/assets/icons/whatsapp_footer";
 import InstagramFooterIcon from "@/assets/icons/instagram_footer";
-import TelegramFooter from "@/assets/icons/telegram_footer";
 import Link from "next/link";
 import SendMailIcon from "@/assets/icons/send_mail";
 import LocationFooterIcon from "@/assets/icons/location_footer";
@@ -88,7 +87,9 @@ const Footer = () => {
         <div className={styles.footer_information}>
           <div>
             <LocationFooterIcon />
-            <span>{CONFIG.ADRESS}</span>
+            <span>
+              {CONFIG.ADRESS_2} <br /> <br /> {CONFIG.ADRESS}
+            </span>
           </div>
           <div>
             <PhoneFooterIcon />

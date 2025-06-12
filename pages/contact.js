@@ -105,7 +105,9 @@ const Contact = () => {
         <section className={styles.section_Address}>
           <div className={styles.Address1}>
             <ContactAddressIcon />
-            <h3>{CONFIG.ADRESS}</h3>
+            <h3>
+              {CONFIG.ADRESS_2} <br /> {CONFIG.ADRESS}
+            </h3>
           </div>
         </section>
         <section class={styles.section_about}>

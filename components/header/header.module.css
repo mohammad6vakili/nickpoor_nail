@@ -13,7 +13,7 @@
 .header_top {
   width: 100%;
   display: flex;
-  height: 50px;
+  height: 60px;
   background: #156419;
   align-items: center;
   padding: 0 50px;
@@ -47,9 +47,24 @@
   display: flex;
   align-items: center;
 }
-.information > div > svg {
-  margin-left: 6px;
+.information > div svg {
+  margin-left: 5px;
 }
+.address {
+  display: flex;
+  flex-direction: column;
+}
+.address > span {
+  display: flex;
+  align-items: center;
+}
+.address > span:nth-child(1) {
+  margin-bottom: 4px;
+}
+.address > span > svg {
+  margin-left: 5px;
+}
+
 .gps,
 .phone {
   margin-left: 30px;

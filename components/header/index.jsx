@@ -62,8 +62,16 @@ const Header = ({ isScroll }) => {
         {/* information */}
         <div className={styles.information}>
           <div className={styles.gps}>
-            <GpsIcon />
-            <h4>{CONFIG.ADRESS}</h4>
+            <h4 className={styles.address}>
+              <span>
+                <GpsIcon />
+                {CONFIG.ADRESS_2}
+              </span>
+              <span>
+                <GpsIcon />
+                {CONFIG.ADRESS}
+              </span>
+            </h4>
           </div>
           <div className={styles.phone}>
             <PhoneIcon />

@@ -93,8 +93,8 @@
 }
 .footer_information > div {
   display: flex;
+  align-items: flex-start;
   width: 100%;
-  align-items: center;
   margin-bottom: 18px;
 }
 .footer_information > div > span {
@@ -105,6 +105,7 @@
 .footer_information > div > svg {
   margin-left: 8px;
   color: #141414;
+  margin-top: 1px;
 }
 .line_last {
   width: 100%;

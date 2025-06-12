@@ -1,36 +1,25 @@
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import Logo from "@/assets/images/logo.png";
-import Image from "next/image";
+import { MdLocationOn } from "react-icons/md";
 import { CONFIG } from "@/constant/config";
 
 const MapComponent = () => {
-  const AnyReactComponent = () => (
-    <div>
-      <Image
-        width={40}
-        height={40}
-        src={Logo}
-        alt="کلینیک درمان ناخن بهار پودولوژی"
-        loading="lazy"
-      />
-    </div>
-  );
   return (
     <MapContainer
       style={{ width: "100%", height: "100%", borderRadius: 30 }}
-      center={[CONFIG.ADRESS_LAT, CONFIG.ADDRESS_LNG]}
-      zoom={16}
+      center={[35.960392, 50.72068]}
+      zoom={9}
       scrollWheelZoom={false}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker
-        position={[CONFIG.ADRESS_LAT, CONFIG.ADDRESS_LNG]}
-        children={AnyReactComponent}
-      />
-      {/* <AnyReactComponent /> */}
+      <Marker position={[35.758352, 51.457945]}>
+        <MdLocationOn color="red" style={{ color: "red", fontSize: 40 }} />
+      </Marker>
+      <Marker position={[36.289594, 50.014944]}>
+        <MdLocationOn color="red" style={{ color: "red", fontSize: 40 }} />
+      </Marker>
     </MapContainer>
   );
 };
